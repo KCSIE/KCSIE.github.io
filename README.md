@@ -1,6 +1,6 @@
 ![](/jekylltheme.jpg)
 
-# Jekyll Theme MDUI
+# Homepage based on Jekyll Theme MDUI
 
 > KCSIE Homepage
 
