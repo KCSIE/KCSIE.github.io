@@ -15,6 +15,6 @@
   icon: "&#xe150;"
 - name: ABOUT
   url: /about/
-  icon: ""
+  icon: "&#xe87d;"
 - name: navSearch
   switch: true
