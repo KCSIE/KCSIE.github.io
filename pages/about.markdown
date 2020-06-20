@@ -8,4 +8,3 @@ img: https://i.loli.net/2017/07/27/597998279d766.jpg
 
 about page...
 
-vis: http://locahost:4000/pages/about.html
