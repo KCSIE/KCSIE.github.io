@@ -1,9 +1,0 @@
----
-layout: post
-title: About Me
-date: 2020-06-20 17:51:00 +0800
-categories: undefined
-tags: 
-img: undefined
----
-I'm KCSIE
