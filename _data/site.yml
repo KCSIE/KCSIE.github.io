@@ -22,13 +22,13 @@ card:
 
 many_authors: false
 
-sns_share: false # SNS Share Switch
+sns_share: # SNS Share Switch
    twitter: false
-   facebook: false
+   facebook: true
    googleplus: false
-   weibo: false
+   weibo: true
    linkedin: false
-   qq: false
+   qq: true
    telegram: false
 
 comment:
