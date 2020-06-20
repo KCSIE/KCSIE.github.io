@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Liquid 模板语言"
+title:  "Living 留底"
 date:   2017-05-27 16:18:06 +0800
 categories: Living
 tags: liquid jekyll

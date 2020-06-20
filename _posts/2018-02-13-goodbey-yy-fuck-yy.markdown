@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "再见 YY，你好 Discord"
+title: "Entertainment 留底"
 date: 2018-02-13 13:26:16 +0800
 categories: Entertainment
 tags: discord game yy
