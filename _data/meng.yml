@@ -52,14 +52,30 @@ music_player:
   player: "aplayer" #cplayer or aplayer
   button_color: "#1abc9c"
   music:
-    - title: 'Faded'
-      author: 'Alan Walker'
-      url: 'http://www.170mv.com/kw/other.web.rh01.sycdn.kuwo.cn/resource/n2/14/71/3899067167.mp3'
-      pic: 'http://p4.music.126.net/8dzD62VK8jLDbhEqkmpIAg==/18277181788626198.jpg?param=130y130'
-    - title: 'Unity'
-      author: 'TheFatRat'
-      url: 'http://www.170mv.com/kw/other.web.ri01.sycdn.kuwo.cn/resource/n2/44/7/1205252665.mp3'
-      pic: 'http://img4.kuwo.cn/star/starheads/240/72/35/3484765923.jpg'
+    - title: 'Flower Dance'
+      author: 'DJ Okawari'
+      url: 'http://music.163.com/song/media/outer/url?id=1326016489.mp3'
+      pic: 'http://p1.music.126.net/iVhEyW5WcFNOfbopCrGRTg==/109951163190220547.jpg'
+    - title: 'Vakning að elska'
+      author: 'Misha Mishenko'
+      url: 'http://music.163.com/song/media/outer/url?id=26224540.mp3'
+      pic: 'http://p1.music.126.net/euyNgFymq6C7ER1Rao4fsw==/2455209464868207.jpg'
+    - title: 'Little Hands'
+      author: 'Endless Melancholy'
+      url: 'http://music.163.com/song/media/outer/url?id=29586022.mp3'
+      pic: 'http://p1.music.126.net/9bLi4tlLcA3clrQGipnT1Q==/2544269908053608.jpg'
+    - title: 'Symphony No.29 in A K201/K186a'
+      author: 'Daniel Barenboim'
+      url: 'http://music.163.com/song/media/outer/url?id=22280520.mp3'
+      pic: 'http://p1.music.126.net/eGHOd-i9hTGUzroNABD6lw==/582741162743043.jpg'
+    - title: 'Waltz No.6 in D Flat Op.64 No.1:Minute'
+      author: 'Vladimir Ashkenazy'
+      url: 'http://music.163.com/song/media/outer/url?id=5164943.mp3'
+      pic: 'http://p2.music.126.net/Cej6Voy8e4UZeSpWgicuJQ==/109951164373730333.jpg'
+    - title: 'sleepy story.'
+      author: 'barnes blvd.'
+      url: 'http://music.163.com/song/media/outer/url?id=557579751.mp3'
+      pic: 'http://p2.music.126.net/JkyGIcfelzjzgiqaLMhYSA==/109951163298720217.jpg'
 
 head_card:
   switch: true
