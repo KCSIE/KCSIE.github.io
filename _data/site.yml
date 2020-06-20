@@ -26,9 +26,9 @@ sns_share: # SNS Share Switch
    twitter: false
    facebook: false
    googleplus: false
-   weibo: true
+   weibo: false
    linkedin: false
-   qq: true
+   qq: false
    telegram: false
 
 comment:
