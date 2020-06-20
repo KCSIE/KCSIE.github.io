@@ -52,7 +52,7 @@ comment:
   valine_verify: false #validation code
   valine_app_id: ''
   valine_app_key: ''
-  valine_placeholder: "ヾﾉ≧∀≦)o来啊，快活啊!"
+  valine_placeholder: ""
 
 prism:
   themes: prism-okaidia
