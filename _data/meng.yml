@@ -1,7 +1,7 @@
 title:  # Meng title
   switch: true # Meng title switch
-  visible: "State is visible" # State is visible text
-  hidden:  "State is hidden" # State is hidden text
+  visible: "Web is visible" # State is visible text
+  hidden:  "Web is hidden" # State is hidden text
   with_default_title: true # with default title
   reset_time: 1000 # If state is visible , reset default title times(ms)
 
@@ -30,7 +30,7 @@ background: # Meng background
 card: # Meng card
   switch: true
   background_color: 'rgba(255, 255, 255, 0.5)'
-  card_img_opacity: '0.8'
+  card_img_opacity: '0.9'
 
 live2d: # live2d ,see https://github.com/EYHN/hexo-helper-live2d
   switch: false
@@ -63,7 +63,7 @@ music_player:
 
 head_card:
   switch: true
-  left_img: "https://ooo.0o0.ooo/2017/06/19/5947b272d418b.jpg"
-  left_text: "『 · 如果真爱有颜色 』"
-  right_img: "https://ooo.0o0.ooo/2017/06/08/5939484dc618e.png"
+  left_img: "https://s1.ax1x.com/2020/06/20/Nl3hPs.jpg"
+  left_text: "日拱一卒无有尽，功不唐捐终入海"
+  right_img: "https://s1.ax1x.com/2020/06/19/NKEwoF.png"
   offset_level: 2
