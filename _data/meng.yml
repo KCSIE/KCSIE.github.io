@@ -1,14 +1,14 @@
 title:  # Meng title
   switch: true # Meng title switch
-  visible: "State is visible text" # State is visible text
-  hidden:  "State is hidden text" # State is hidden text
+  visible: "State is visible" # State is visible text
+  hidden:  "State is hidden" # State is hidden text
   with_default_title: true # with default title
   reset_time: 1000 # If state is visible , reset default title times(ms)
 
 cursor: # Meng cursor
   switch: false # Meng cursor switch
-  auto_url: "https://ooo.0o0.ooo/2017/06/12/593ea1901c930.png" # State is auto style
-  pointer_url: "https://ooo.0o0.ooo/2017/06/12/593ea3612fd77.png" # State is pointer style
+  auto_url: "" # State is auto style
+  pointer_url: "" # State is pointer style
 
 console: # Meng console info
   switch: false # Meng console info switch
@@ -22,7 +22,7 @@ header: # Meng header color + theme-color
 
 background: # Meng background
   switch: true
-  background_img: "https://ooo.0o0.ooo/2017/06/14/5940a9b8e4c21.jpg"
+  background_img: "https://s1.ax1x.com/2020/06/06/t6KpOs.jpg"
   transparent_header: true
   transparent_footer: false
   text_color: '#000'
