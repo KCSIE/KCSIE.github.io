@@ -30,7 +30,7 @@ background: # Meng background
 card: # Meng card
   switch: true
   background_color: 'rgba(255, 255, 255, 0.5)'
-  card_img_opacity: '0.9'
+  card_img_opacity: '0.6'
 
 live2d: # live2d ,see https://github.com/EYHN/hexo-helper-live2d
   switch: false
