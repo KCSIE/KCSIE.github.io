@@ -22,7 +22,7 @@ card:
 
 many_authors: false
 
-sns_share: # SNS Share Switch
+sns_share: false # SNS Share Switch
    twitter: false
    facebook: false
    googleplus: false
