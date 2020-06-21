@@ -11,3 +11,5 @@ img: https://i.loli.net/2017/07/27/597998279d766.jpg
 > 效果就是本博客的tag，此外还需要配合js。
 
 这个讲真，真的好累...
+
+vis: http://localhost:4000/pages/about.html
