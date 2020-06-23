@@ -5,7 +5,10 @@ header:
     motto: "Carpe Diem"
     introduction: "Hi! I'm KCSIE, an undergratuate major in software engineering. "
     education-background: "Undergraduate: SCU"
-    learning: "-Programming Language: Java, Python, Matlab, C ,html&css -Dabble In: Image processing, Crawler-Learning: Tensorflow"  
+    learning: >
+     -Programming Language: Java, Python, Matlab, C ,html&css 
+     -Dabble In: Image processing, Crawler
+     -Learning: Tensorflow"  
     
     
     
