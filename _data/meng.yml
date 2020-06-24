@@ -80,6 +80,6 @@ music_player:
 head_card:
   switch: true
   left_img: "https://s1.ax1x.com/2020/06/20/Nl3hPs.jpg"
-  left_text: "日拱一卒无有尽，功不唐捐终入海"
+  left_text: "日拱壹卒無有盡，功不唐捐終入海"
   right_img: "https://s1.ax1x.com/2020/06/19/NKEwoF.png"
   offset_level: 2
