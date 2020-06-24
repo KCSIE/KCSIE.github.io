@@ -1,10 +1,10 @@
 ---
 layout: post
 title:  "Tech Column"
-date:   2016-04-14 10:24:49 +0800
+date:   2020-06-24 11:46:59 +0800
 categories: Tech
 tags: Product Invention Document Theory Thoughts
-img: https://ooo.0o0.ooo/2017/05/27/59292b1243dc9.jpg
+img: https://s1.ax1x.com/2020/06/19/NuVLzn.md.png
 author: test
 describe: About Tech Column
 ---
