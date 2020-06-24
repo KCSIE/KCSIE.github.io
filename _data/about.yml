@@ -7,9 +7,11 @@ header:
     education-background1: "-Undergraduate: SCU"
     education-background2: "-Graduate: Null"
     learning1: "-Programming Language: Java, Python, Matlab, C, HTML&CSS" 
-    learning2: "-Project Experience: 1-CT Image Processing Based on Matlab"
-    learning3: "-Career: Null"
-    learning4: "-Learning: Tensorflow, Tableau/PowerBI, Image processing, Crawler"  
+    learning2: "-Learning: Tensorflow, Tableau/PowerBI, Image processing, Crawler"  
+    work1: "Internship: Null"
+    work2: "Formal: Null"
+    project1: "1. CT Image Processing Based on Matlab"
+    project2: "2. Null"
     
     
     
