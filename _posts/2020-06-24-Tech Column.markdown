@@ -3,11 +3,12 @@ layout: post
 title:  "Tech Column"
 date:   2020-06-24 11:46:59 +0800
 categories: Tech
-tags: Product Invention Document Theory Thoughts
+tags: Product Invention Document Theory Corporations Thoughts Other
 img: https://s1.ax1x.com/2020/06/19/NuVLzn.md.png
-author: ME
+author: KCSIE
 describe: About Tech Column
 ---
+
 
 ## WHAT
 
