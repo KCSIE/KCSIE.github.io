@@ -5,7 +5,7 @@ date:   2020-06-24 11:46:59 +0800
 categories: Tech
 tags: Product Invention Document Theory Thoughts
 img: https://s1.ax1x.com/2020/06/19/NuVLzn.md.png
-author: test
+author: ME
 describe: About Tech Column
 ---
 
