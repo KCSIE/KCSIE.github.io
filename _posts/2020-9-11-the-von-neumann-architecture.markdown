@@ -23,9 +23,9 @@ with these components:
 + A controller that contains an instruction register and program counter
     > + Program Counter(PC)-Store the address of the instruction
 	> + Control Unit(CU)
-	>> + Instruction Register(IR)-Store the instruction
-	>> + Instruction Decoder(ID)-Interpret the opcode of the instruction
-	>> + Operation Controller(OC)-Produce operation control signals
+	>> - Instruction Register(IR)-Store the instruction
+	>> - Instruction Decoder(ID)-Interpret the opcode of the instruction
+	>> - Operation Controller(OC)-Produce operation control signals
 + Memory that stores data and instructions
     >Main memory -CPU has direct access to it
 + External mass storage
@@ -37,15 +37,15 @@ with these components:
 是根据1945年美籍匈牙利数学家、物理学家约翰-冯-诺依曼等人在《EDVAC报告第一稿》
 中的描述而提出的一种计算机体系结构，描述了一种电子计算机的设计体系结构，
 其中包括这些组成部分：
-+ 一个处理单元，包含一个算术逻辑单元和程序状态寄存器
++ 包含算术逻辑单元和程序状态寄存器的处理单元
     > + 算术逻辑单元(ALU)-实现算术运算和逻辑运算
 	> + 程序状态寄存器(PSW)-体现当前指令执行结果的状态信息和存放控制信息
 + 包含指令寄存器和程序计数器的控制器
     > + 程序计数器(PC)-存放指令地址
 	> + 控制单元(CU)
-	>> + 指令寄存器(IR)-存放指令
-	>> + 指令译码器(ID)-分析解释指令的操作码
-	>> + 操作控制器(OC)-产生操作控制信号
+	>> - 指令寄存器(IR)-存放指令
+	>> - 指令译码器(ID)-分析解释指令的操作码
+	>> - 操作控制器(OC)-产生操作控制信号
 + 存储数据和指令的存储器
     >主存储器(内存)-CPU可直接访问
 + 外部大容量存储
