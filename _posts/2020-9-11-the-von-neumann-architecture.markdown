@@ -40,6 +40,8 @@ Also, in addition to the processor and controller, the CPU has the following par
 + Cache
     >Cache is a component that stores data so that future requests for that data can be served faster; the data stored in a cache might be the result of an earlier computation or a copy of data stored elsewhere. A cache hit occurs when the requested data can be found in a cache, while a cache miss occurs when it cannot. Cache hits are served by reading data from the cache, which is faster than recomputing a result or reading from a slower data store; thus, the more requests that can be served from the cache, the faster the system performs
 
+<img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/09/11/wt7Xjg.png" alt="" />
+
 ## 概述
 冯-诺依曼体系结构--又称冯-诺依曼模型或普林斯顿体系结构，
 是根据1945年美籍匈牙利数学家、物理学家约翰-冯-诺依曼等人在《EDVAC报告第一稿》
@@ -68,7 +70,6 @@ Also, in addition to the processor and controller, the CPU has the following par
 + 高速缓冲存储器
     >也叫缓存(Cache)，其原始意义是指存取速度比一般随机存取记忆体(RAM)来得快的一种RAM，一般而言它不像系统主记忆体那样使用DRAM技术，而使用昂贵但较快速的SRAM技术，也有快取记忆体的名称。提供“缓存”的目的是为了让数据访问的速度适应CPU的处理速度，当CPU处理数据时，它会先到Cache中去寻找，如果数据因之前的操作已经读取而被暂存其中，就不需要再从随机存取存储器中读取数据
 
-<img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/09/11/wt7Xjg.png" alt="" />
 <img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/09/11/wNzDcn.png" alt="" />
 
 ## Trait
@@ -92,6 +93,10 @@ conditions
 
 <img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/09/11/wUA9kq.png" alt="" />
 
+## Function
++
+
+## 功能
  
 
 
