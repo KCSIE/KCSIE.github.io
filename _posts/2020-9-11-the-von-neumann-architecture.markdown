@@ -34,8 +34,7 @@ with these components:
 + 外部大容量存储
 + 输入和输出机制
 
-<div style="align: center">
-<img src="https://s1.ax1x.com/2020/09/11/wt7Xjg.png"/>
-</div>
+<img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/09/11/wt7Xjg.png" alt="" />
+
 
 
