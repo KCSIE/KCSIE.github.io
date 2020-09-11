@@ -6,7 +6,7 @@ categories: Study
 tags: Theory CPU ComputerScience
 img: https://s1.ax1x.com/2020/09/11/wtHYbd.png
 author: KCSIE
-describe: What's von Neumann architecture?
+describe: 冯-诺依曼结构
 ---
 
 ## Overview
