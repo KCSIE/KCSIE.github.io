@@ -33,3 +33,5 @@ with these components:
 + 存储数据和指令的存储器
 + 外部大容量存储
 + 输入和输出机制
+
+![构造 图标](https://s1.ax1x.com/2020/09/11/wt7Xjg.png)
