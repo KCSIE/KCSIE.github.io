@@ -34,4 +34,4 @@ with these components:
 + 外部大容量存储
 + 输入和输出机制
 
-<img src="https://s1.ax1x.com/2020/09/11/wt7Xjg.png" align="center">
+<div align=center>![冯诺依曼结构原理图 图标](https://s1.ax1x.com/2020/09/11/wt7Xjg.png)
