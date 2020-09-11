@@ -36,5 +36,13 @@ with these components:
 
 <img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/09/11/wt7Xjg.png" alt="" />
 
+## Trait
++ All data and instructions processed by the cpu are expressed in binary
++ Instructions and data are indiscriminately mixed and stored in the same memory
++ Sequentially execute each instruction of the program
 
+## 特点
++ CPU处理的数据和指令一律用二进制表示
++ 指令和数据不加区别混合存储在同一个存储器
++ 顺序执行程序的每一条指令
 
