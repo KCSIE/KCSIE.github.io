@@ -107,6 +107,8 @@ conditions
 + 可以根据需要控制程序的走向，并根据指令控制计算机的各部件协调操作
 + 能够按照要求将处理的结果输出给用户
 
+<img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/09/13/wwXde0.jpg" alt="" />
+
 ## Execution
 + Instruction cycle  
    + The process of executing a program is actually a continuous process of fetching instructions, analyzing them, and executing them. Von Neumann type computers essentially work with a serial sequential processing mechanism, and must execute instruction sequences one by one even when the data in question is ready
@@ -137,7 +139,7 @@ conditions
 	+ > 计算机在执行时，先从内存中取出第一条指令，通过控制器的译码器接收指令的要求，再从存储器中取出数据进行指定的运算和逻辑操作等，然后再按地址把结果送到内存中，如果需要向硬盘等存储设备存储数据，还需要将内存中的该数据存储到硬盘中。接下来取出第2条指令，在控制器的指挥下完成规定操作，依次进行下去，直到遇到停止指令
 	+ > 计算机中有两种信息在流动，一种是数据，即各种原始数据、中间结果和程序等，另一种信息是控制信息，它控制机器的各种部件执行指令规定的各种操作
 	
-	
+<img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/09/13/wwjkmq.jpg" alt="" />	
 	
 	
 	
