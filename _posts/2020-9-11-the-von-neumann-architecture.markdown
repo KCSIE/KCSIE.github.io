@@ -94,10 +94,17 @@ conditions
 <img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/09/11/wUA9kq.png" alt="" />
 
 ## Function
-+
++ Sending the required programs and data to the computer (Copy)
++ Must have the ability to remember programs, data, intermediate results and final calculations for a long period of time(Hard disk)
++ Be able to perform various arithmetic and logical operations and data processing such as data transfer (ALU)
++ Ability to control the direction of the program as required and to control the coordinated operation of the various components of the computer as directed
++ Be able to output the results of processing to the user as required
 
 ## 功能
- 
-
++ 将需要的程序和数据传输送至计算机中（复制）
++ 必须具备长期记忆程序、数据、中间结果及最终运算结果的能力（硬盘）
++ 具有能够完成各种算术、逻辑运算和数据传送等数据加工处理的能力（ALU）
++ 可以根据需要控制程序的走向，并根据指令控制计算机的各部件协调操作
++ 能够按照要求将处理的结果输出给用户
 
 
