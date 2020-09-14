@@ -33,3 +33,33 @@ During the execution process, the central processor and memory may receive async
 
 <img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/09/14/wsSC26.png" alt="" />
 
+## Overview
+Interrupting is an important technique used to improve the efficiency and functionality of a computer. Hardware interrupts were originally introduced for the sake of performance only. If there were no interrupts in a computer system, a processor communicating with an external device would have to do a busy waiting after issuing a command to the device, repeatedly polling the device to see if it had completed its action and returning the result. This results in a lot of wasted processor cycles. With the introduction of interrupts, the processor can return immediately after the device request to process another task, and when the device completes its action, it sends an interrupt to the processor, which can then go back and get the result. In this way, during the processing cycle of the device, the processor can perform some other meaningful work at a small time cost caused by the switch. It was later used in a number of ways for external and internal CPU emergencies, machine failures, time control, etc., and gave rise to the concept of entering interrupt processing (soft interrupts) via software
+
+In terms of hardware implementation, the interrupt can be a stand-alone system containing control lines or it can be integrated into a memory subsystem. For the former, on IBM personal machines, a programmable interrupt controller (PIC) is widely used for interrupt response and processing.The PIC is connected between a number of interrupt request devices and the interrupt pins of the processor, thus enabling multiplexing of the processor's interrupt request lines (mostly one or two pins). As another form of interrupt implementation, a memory subsystem implementation, the interrupt port can be mapped to the address space of the memory so that access to a particular memory address is actually an interrupt request
+
+In simple terms, interruptions have the following main benefits:
++ Most I/O devices are slower than the processor，so interrupt can improve CPU’s utilization
++ Count
++ Avoid some program to monopolize CPU 
+
+
+## 总览
+中断是用以提高计算机工作效率、增强计算机功能的一项重要技术。最初引入硬件中断，只是出于性能上的考量。如果计算机系统没有中断，则处理器与外部设备通信时，它必须在向该设备发出指令后进行忙等待（Busy waiting），反复轮询该设备是否完成了动作并返回结果。这就造成了大量处理器周期被浪费。引入中断以后，当处理器发出设备请求后就可以立即返回以处理其他任务，而当设备完成动作后，发送中断信号给处理器，后者就可以再回过头获取处理结果。这样，在设备进行处理的周期内，处理器可以执行其他一些有意义的工作，而只付出一些很小的切换所引发的时间代价。后来被用于CPU外部与内部紧急事件的处理、机器故障的处理、时间控制等多个方面，并产生通过软件方式进入中断处理（软中断）的概念。
+
+在硬件实现上，中断可以是一个包含控制线路的独立系统，也可以被集成进存储器子系统中。对于前者，在IBM个人机上，广泛使用可编程中断控制器（Programmable Interrupt Controller，PIC）来负责中断响应和处理。PIC被连接在若干中断请求设备和处理器的中断引脚之间，从而实现对处理器中断请求线路（多为一针或两针）的复用。作为另一种中断实现的形式，即存储器子系统实现方式，可以将中断端口映射到存储器的地址空间，这样对特定存储器地址的访问实际上是中断请求。
+
+简单来说，中断的有如下主要好处：
++ 提高CPU利用率
++ 计数时钟中断
++ 避免CPU被独占
+
+
+
+
+
+
+
+
+
+
