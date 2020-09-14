@@ -3,11 +3,13 @@ layout: post
 title: The von Neumann architecture
 date: 2020-09-07 15:28:49 +0800
 categories: Study
-tags: Theory CPU ComputerScience
+tags: Theory CPU I/O Memory ComputerScience
 img: https://s1.ax1x.com/2020/09/11/wtHYbd.png
 author: KCSIE
 describe: 冯-诺依曼结构
 ---
+
+<img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/09/11/wtHYbd.png" alt="" />
 
 ## Overview
 The von Neumann architecture—also known as the von 
