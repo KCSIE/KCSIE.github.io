@@ -43,8 +43,6 @@ In simple terms, interruptions have the following main benefits:
 + Count
 + Avoid some program to monopolize CPU 
 
-<img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/09/14/wsPjhj.png" alt="" />
-
 ## 总览
 中断是用以提高计算机工作效率、增强计算机功能的一项重要技术。最初引入硬件中断，只是出于性能上的考量。如果计算机系统没有中断，则处理器与外部设备通信时，它必须在向该设备发出指令后进行忙等待（Busy waiting），反复轮询该设备是否完成了动作并返回结果。这就造成了大量处理器周期被浪费。引入中断以后，当处理器发出设备请求后就可以立即返回以处理其他任务，而当设备完成动作后，发送中断信号给处理器，后者就可以再回过头获取处理结果。这样，在设备进行处理的周期内，处理器可以执行其他一些有意义的工作，而只付出一些很小的切换所引发的时间代价。后来被用于CPU外部与内部紧急事件的处理、机器故障的处理、时间控制等多个方面，并产生通过软件方式进入中断处理（软中断）的概念。
 
@@ -55,9 +53,54 @@ In simple terms, interruptions have the following main benefits:
 + 计数时钟中断
 + 避免CPU被独占
 
+## Classification
++ Hardware Interrupt:
+  - > maskable interrupt-Processors typically have an internal interrupt mask register which allows selective enabling and disabling of hardware interrupts. Each interrupt signal is associated with a bit in the mask register; on some systems, the interrupt is enabled when the bit is set and disabled when the bit is clear, while on others, a set bit disables the interrupt. When the interrupt is disabled, the associated interrupt signal will be ignored by the processor. Signals which are affected by the mask are called maskable interrupts
+  - > non-maskable interrupt-Some interrupt signals are not affected by the interrupt mask and therefore cannot be disabled; these are called non-maskable interrupts (NMI). NMIs indicate high priority events which cannot be ignored under any circumstances, such as the timeout signal from a watchdog time
+  - > interprocessor interrupt-A special type of hardware interrupt. Issued by the processor and received by other processors. Only seen in multiprocessor systems to facilitate interprocessor communication or synchronization
+  - > spurious interrupt-A spurious interrupt is an invalid, short-duration signal on an interrupt input. These are usually caused by glitches resulting from electrical interference, race conditions, or malfunctioning devices
++ Software Interrupt:
+  - > A software interrupt is requested by the processor itself upon executing particular instructions or when certain conditions are met. Every software interrupt signal is associated with a particular interrupt handler. A software interrupt may be intentionally caused by executing a special instruction which, by design, invokes an interrupt when executed. Such instructions function similarly to subroutine calls and are used for a variety of purposes, such as requesting operating system services and interacting with device drivers (e.g., to read or write storage media)
+
+## 分类
++ 硬件中断：
+  - > 可屏蔽中断-硬件中断的一类，可通过在中断屏蔽寄存器中设定位掩码来关闭
+  - > 非可屏蔽中断-硬件中断的一类，无法通过在中断屏蔽寄存器中设定位掩码来关闭。典型例子是时钟中断（一个硬件时钟以恒定频率—如50Hz—发出的中断）
+  - > 处理器间中断-一种特殊的硬件中断。由处理器发出，被其它处理器接收。仅见于多处理器系统，以便于处理器间通信或同步
+  - > 伪中断-一类不希望被产生的硬件中断。发生的原因有很多种，如中断线路上电气信号异常，或是中断请求设备本身有问题
++ 软件中断：
+  - > 是一条CPU指令，用以自陷一个中断。由于软中断指令通常要运行一个切换CPU至内核态（Kernel Mode/Ring 0）的子例程，它常被用作实现系统调用（System call）
+
+## Process
+
+<img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/09/14/wsPz3n.png" alt="" />
 <img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/09/14/wrbZUf.png" alt="" />
+<img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/09/14/wsPjhj.png" alt="" />
 
+## 过程
+<img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/09/14/wsuZdI.png" alt="" />
 
+## Exceptions and interrupts
+Exceptions, unlike interrupts, must be synchronized with the processor clock when they are generated. In fact, exceptions are also known as synchronous interrupts. For example, the processor generates an exception when the processor executes to an incorrect instruction due to a programming error, or when there is a special circumstance (missing pages) during execution that must be handled by the kernel.
+Interrupts work in a similar way, differing only in that they are caused by hardware rather than software.
+
+## 异常与中断
+异常与中断不同，它在产生时必须考虑与处理器时钟同步。实际上，异常也称为同步中断。比如，在处理器执行到由于编程失误而导致的错误指令的时候，或者在执行期间出现特殊情况(缺页)，必须靠内核来处理的，处理器就产生一个异常。
+中断的的工作方式类似，其差异只在于中断是由硬件而不是软件引起的
+
+## Multiple Interrupts
++ Method 1：Disable interrupts while an interrupt is being processed
++ Method 2： Define priorities for interrupts
+
+Method 1：
+<img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/09/14/wsnfqs.png" alt="" />
+
+## 多中断
++ 方法1：禁止任何中断
++ 方法2：定义级别
+
+Method 2：
+<img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/09/14/wsu9JK.png" alt="" />
 
 
 
