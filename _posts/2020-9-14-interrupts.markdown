@@ -11,7 +11,7 @@ describe: 中断
 
 <img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/09/14/wrqgwq.png" alt="" />
 
-##Introduction
+## Introduction
 The instruction cycle is formed when the CPU executes instructions as follows:
 + > Before the program is executed, the beginning address of the program is sent to the program counter. This address is determined when the program is loaded into memory, so the first thing stored in the program counter is the address of the first instruction in the program. This address is sent to the system bus to complete the fetch operation
 + > The fetched instructions are temporarily stored in the instruction register
@@ -21,7 +21,7 @@ During the execution process, the central processor and memory may receive async
 
 <img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/09/14/wrqhfU.png" alt="" />
 
-##引入
+## 引入
 在CPU如下执行指令时，形成了指令周期：
 + > 在程序执行之前，会将程序的起始地址送入程序计数器中，该地址在程序加载到内存时确定，所以程序计数器中首先存的是程序第一条指令的地址。将该地址送往地址总线，完成取指操作
 + > 取来的指令暂存到指令寄存器中
