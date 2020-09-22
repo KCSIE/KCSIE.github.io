@@ -135,3 +135,14 @@ Process control blocks:
 
 
 <img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/09/21/wqaBNt.png" alt="" />
+
+
+
+## Process states
+
+An operating system kernel that allows multitasking needs processes to have certain states. Names for these states are not standardised, but they have similar functionality.
+
++ First, the process is "created" by being loaded from a secondary storage device (hard disk drive, CD-ROM, etc.) into main memory. After that the process scheduler assigns it the "waiting" state.
++ While the process is "waiting", it waits for the scheduler to do a so-called context switch. The context switch loads the process into the processor and changes the state to "running" while the previously "running" process is stored in a "waiting" state.
++ If a process in the "running" state needs to wait for a resource (wait for user input or file to open, for example), it is assigned the "blocked" state. The process state is changed back to "waiting" when the process no longer needs to wait (in a blocked state).
++ Once the process finishes execution, or is terminated by the operating system, it is no longer needed. The process is removed instantly or is moved to the "terminated" state. When removed, it just waits to be removed from main memory.
