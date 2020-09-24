@@ -9,10 +9,17 @@ author: KCSIE
 describe: About Tech Column
 ---
 
-## What will I write here?
-I'll record tech-related stuff here. Including but not limited to tech news，products' reviews and my thought to these stuff.
-## 我将在这写什么？
-我会在这记录我接触到的科技相关的东西。 包括但不限于科技资讯、产品评测和我的个人感想。
+
+
+## Notice
+
+For personal study only. Please correct me if there's any wrong or offensive part. It would be much appreciated if you could provide any constructive criticism or feedback.
+
+
+
+## 贴士
+
+仅供个人学习使用。 如有错误或冒犯之处还请指正。 若您能提供任何建设性评论或反馈，感激不尽。
 
 
 
