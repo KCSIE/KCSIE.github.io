@@ -459,14 +459,56 @@ I/O表：
   - 内存管理
   - 资源的所有权和利用情况
 
-## Process Control
+## Execution of the Operating System
+
+### Non-process Kernel
+
++ Execute kernel outside of any process
++ Operating system code is executed as a separate entity that operates in privileged mode
+
+<img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/10/03/08CThV.png" alt="" />
+
+### Execution Within User Processes
+
++ Operating system software within context of a user process
++ Process executes in privileged mode when executing operating system code
+
+<img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/10/03/08CHpT.png" alt="" />
+
+<img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/10/03/08CLX4.png" alt="" />
+
+### Process-Based Operating System
+
++ Implement operating system as a collection of system processes
++ Useful in multi-processor or multi-computer environment
+
+<img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/10/03/08CqcF.png" alt="" />
 
 
 
 
 
-## 进程控制
+## 操作系统的执行
 
+### 无进程内核
 
++ 在任何进程之外执行内核
++ 操作系统代码作为一个单独的实体，在特权模式下执行
 
-<img style="display: block; margin: 0 auto;" src="" alt="" />
+<img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/10/03/08CThV.png" alt="" />
+
+### 在用户进程中执行
+
++ 用户进程中的操作系统软件
++ 执行操作系统代码时，进程在特权模式下执行
+
+<img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/10/03/08CHpT.png" alt="" />
+
+<img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/10/03/08CLX4.png" alt="" />
+
+### 基于进程的OS
+
++ 将操作系统作为系统进程的集合来实施
++ 在多处理器或多计算机环境中有用
+
+<img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/10/03/08CqcF.png" alt="" />
