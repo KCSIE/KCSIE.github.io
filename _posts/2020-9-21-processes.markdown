@@ -416,6 +416,8 @@ Process Image: Collection of program, data, stack, attributes
 + 每个进程和资源的当前状态
 + 操作系统构造并维护他所管理的所有实体的信息表
 
+OS控制表结构
+
 <img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/09/26/0ikuUP.png" alt="" />
 
 内存表：
