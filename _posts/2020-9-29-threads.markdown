@@ -8,7 +8,7 @@ img: https://s1.ax1x.com/2020/10/04/08yz6A.jpg
 author: KCSIE
 describe: 线程
 ---
-## Introduction
+# Introduction
 
 ### What's the thread?
 
@@ -49,7 +49,7 @@ These two characteristics are treated independently by the operating system.
 
 
 
-## 引入
+# 引入
 
 ### 什么是线程?
 
@@ -141,7 +141,7 @@ Distinction Between Threads and Processes From the Point of View of Process Mana
 
 
 
-## 多线程
+# 多线程
 
 ### 单线程
 
@@ -193,7 +193,7 @@ Distinction Between Threads and Processes From the Point of View of Process Mana
 
 
 
-## Thread Functionality 
+# Thread Functionality 
 
 ### Thread States
 
@@ -210,7 +210,7 @@ Operations associated with a change in thread state
 
 <img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/10/04/0GFTGq.png" alt="" />
 
-## 线程功能特性 
+# 线程功能特性 
 
 ### 线程状态
 
@@ -227,7 +227,7 @@ Operations associated with a change in thread state
 
 <img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/10/04/0GFTGq.png" alt="" />
 
-## Types of Threads
+# Types of Threads
 
 ### User-Level Threads (ULT)
 
@@ -237,9 +237,99 @@ Operations associated with a change in thread state
 
 <img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/10/04/0GAzgx.png" alt="" />
 
+The following figure shows the relationship between thread scheduling and process scheduling:
+
 <img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/10/04/0GAx81.png" alt="" />
 
-![0GAx81.png](https://s1.ax1x.com/2020/10/04/0GAx81.png)
+A process that implements multithread using thread library may be in the midst of a thread switch from one thread to another when interrupted.
+
+### Kernel-Level Threads (KLT)
+
++ Kernel maintains context information for the process and the threads
++ Scheduling is done on a thread basis
+
+![0GjgdP.png](https://s1.ax1x.com/2020/10/04/0GjgdP.png)
+
+### Difference between User Level thread and Kernel Level thread
+
+| User-Level Threads (ULT)                                     | Kernel-Level Threads (KLT)                                   |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| User thread are implemented by users.                        | Kernel threads are implemented by OS.                        |
+| OS doesn’t recognized user level threads.                    | Kernel threads are recognized by OS.                         |
+| Implementation of User threads is easy.                      | Implementation of Kernel thread is complicated.              |
+| Context switch time is less.                                 | Context switch time is more.                                 |
+| Context switch requires no hardware support.                 | Hardware support is needed.                                  |
+| If one user level thread perform blocking operation then entire process will be blocked. | If one kernel thread perform blocking operation then another thread can continue execution. |
+| User level threads are designed as dependent threads.        | Kernel level threads are designed as independent threads.    |
+| Example : Java thread, POSIX threads.                        | Example : Window Solaris.                                    |
+
+| Advantages of ULT to KLT                                     | Disadvantages of ULT to KLT                                  | Advantages of KLT to ULT                                     |                Disadvantages of KLT to ULT                |
+| :----------------------------------------------------------- | :----------------------------------------------------------- | ------------------------------------------------------------ | :-------------------------------------------------------: |
+| Less overhead of thread switches(mode switches do not required) | One thread is blocked, all other threads of the process are blocked | Multiple threads in one process can simultaneously run on multiple processors | The switch of thread requires mode switches to the kernel |
+| Scheduling can be application specific                       | A multithreaded application cannot take advantage of multiprocessing | One threads blocked cannot make the other threads within the same process blocked |                                                           |
+| ULT can run on any operating system                          | Ways to fix these drawbacks              -Multiple processes               -Jacketing | Kernel routines themselves can be multithreaded              |                                                           |
+
+### Combined Approaches
+
++ Example is Solaris
++ Thread creation done in the user space
++ The multiple ULTs from a single application are mapped onto some (smaller or equal) number of KLTs
++ Bulk of scheduling and synchronization of threads within application
+
+![0GzMPf.png](https://s1.ax1x.com/2020/10/04/0GzMPf.png)
+
+
+
+# 线程的种类
+
+### 用户级线程 (ULT)
+
++ 多线程由线程库实现
++ 所有线程管理都由应用程序完成
++ 内核不知道线程的存在，调度是以进程为基础的
+
+下图显示了线程调度和进程调度的关系：
+
+<img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/10/04/0GAx81.png" alt="" />
+
+一个使用线程库实现多线程的进程在中断时，可能正处于从一个线程切换到另一个线程的过程中。
+
+### 内核级线程 (KLT)
+
++ 内核维护进程和线程的上下文信息
++ 以线程为基础进行调度
+
+### 用户级线程与内核级线程的区别
+
+| 用户级线程 (ULT)                                     | 内核级线程 (KLT)                                             |
+| ---------------------------------------------------- | ------------------------------------------------------------ |
+| 用户级线程是由用户来实现的。                         | 内核级线程由操作系统实现。                                   |
+| 操作系统不识别用户级线程。                           | 内核级线程被操作系统识别。                                   |
+| 用户级线程的实现较容易。                             | 内核级线程的实现较复杂。                                     |
+| 上下文切换时间较少。                                 | 上下文切换时间较多。                                         |
+| 上下文切换不需要硬件支持。                           | 需要硬件支持。                                               |
+| 如果一个用户级线程执行阻塞操作，则整个进程将被阻塞。 | 如果一个内核级线程执行阻塞操作，那么另一个线程可以继续执行。 |
+| 用户级线程被设计成依赖性线程。                       | 内核级线程被设计成独立线程。                                 |
+| 例子: Java 线程, POSIX 线程                          | 例子: Window Solaris                                         |
+
+| ULT较KLT的优势                     | ULT较KLT的劣势                                               | KLT较ULT的优势                                 |             KLT较ULT的劣势             |
+| :--------------------------------- | :----------------------------------------------------------- | ---------------------------------------------- | :------------------------------------: |
+| 减少线程切换的消耗(不需要切换模式) | 一个线程被阻塞，该进程的所有其他线程都被阻塞                 | 一个进程中的多个线程可以同时在多个处理器上运行 | 内核级线程的切换需要对内核进行模式切换 |
+| 调度可以是特定的应用程序           | 多线程应用程序不能利用多进程的优势                           | 一个线程被阻塞不会使同一进程内的其他线程被阻塞 |                                        |
+| ULT 可以在任意操作系统运行         | 解决这些缺点的方法：1. 多进程                 2. 套管，非阻塞调用 | 内核例程本身也可以是多线程的                   |                                        |
+
+### 两者结合的方法
+
++ 以Solaris为例
++ 在用户空间完成线程创建
++ 来自单一应用的多个ULT被映射到一些（较小或相等）数量的KLT上
++ 大量的调度和同步，在进程内进行
+
+![0JSelF.jpg](https://s1.ax1x.com/2020/10/04/0JSelF.jpg)
+
+
+
+
 
 
 

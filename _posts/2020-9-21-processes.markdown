@@ -11,7 +11,7 @@ describe: 进程
 
 
 
-## Background
+# Background
 
 ### What's the process?
 
@@ -77,7 +77,7 @@ Process control blocks:
 
 
 
-## 背景
+# 背景
 
 ### 什么是进程？
 
@@ -140,7 +140,7 @@ Process control blocks:
 
 
 
-## Process states
+# Process states
 
 An operating system kernel that allows multitasking needs processes to have certain states. Names for these states are not standardised, but they have similar functionality.
 
@@ -252,7 +252,7 @@ Reasons for Process Suspension:
 
 
 
-## 进程状态
+# 进程状态
 
 一个操作系统内核，允许多任务需要进程具有一定的状态。这些状态的名称并不统一，但它们的功能相似。
 
@@ -353,7 +353,7 @@ Reasons for Process Suspension:
 
 
 
-## Process Description
+# Process Description
 
 ### Operating System Control Structures
 
@@ -409,7 +409,7 @@ Process Image: Collection of program, data, stack, attributes
 
 
 
-## 进程的描述
+# 进程的描述
 
 ### 操作系统的控制结构
 
@@ -461,7 +461,7 @@ I/O表：
   - 内存管理
   - 资源的所有权和利用情况
 
-## Execution of the Operating System
+# Execution of the Operating System
 
 ### Non-process Kernel
 
@@ -490,7 +490,7 @@ I/O表：
 
 
 
-## 操作系统的执行
+# 操作系统的执行
 
 ### 无进程内核
 
