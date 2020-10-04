@@ -278,6 +278,10 @@ A process that implements multithread using thread library may be in the midst o
 
 <img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/10/04/0GzMPf.png" alt="" />
 
+#### Multi Threading Models in Process Management
+
+<img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/10/04/0JAteS.png" alt="" />
+
 
 
 ## 线程的种类
@@ -327,9 +331,19 @@ A process that implements multithread using thread library may be in the midst o
 
 <img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/10/04/0JSelF.jpg" alt="" />
 
+#### 进程管理中的多线程模型
 
++ 一对一模型
 
+<img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/10/04/0JEZpn.gif" alt="" />
 
++ 多对一模型
+
+<img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/10/04/0JEm60.gif" alt="" />
+
++ 多对多模型
+
+<img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/10/04/0JEelq.gif" alt="" />
 
 
 
