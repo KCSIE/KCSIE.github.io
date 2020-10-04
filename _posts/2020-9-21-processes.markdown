@@ -11,9 +11,9 @@ describe: 进程
 
 
 
-# Background
+## Background
 
-### What's the process?
+#### What's the process?
 
 In computing, a process is the instance of a computer program that is being executed by one or many threads. It contains the program code and its activity. Depending on the operating system (OS), a process may be made up of multiple threads of execution that execute instructions concurrently.
 
@@ -36,7 +36,7 @@ In short, process is:
 
 
 
-### Difference between Program and Process
+#### Difference between Program and Process
 
 
 
@@ -52,7 +52,7 @@ In short, process is:
 
 
 
-### Process Control Block
+#### Process Control Block
 
 Process control blocks:
 
@@ -77,9 +77,9 @@ Process control blocks:
 
 
 
-# 背景
+## 背景
 
-### 什么是进程？
+#### 什么是进程？
 
 进程是一个或多个线程正在执行的计算机程序的实例。它包含程序代码及其活动。根据操作系统(OS)的不同，一个进程可能由多个并发执行指令的执行线程组成。
 
@@ -102,7 +102,7 @@ Process control blocks:
 
 
 
-### 程序和进程的区别
+#### 程序和进程的区别
 
 
 
@@ -118,7 +118,7 @@ Process control blocks:
 
 
 
-### 进程控制块
+#### 进程控制块
 
 进程控制块：
 
@@ -140,7 +140,7 @@ Process control blocks:
 
 
 
-# Process states
+## Process states
 
 An operating system kernel that allows multitasking needs processes to have certain states. Names for these states are not standardised, but they have similar functionality.
 
@@ -151,7 +151,7 @@ An operating system kernel that allows multitasking needs processes to have cert
 
 This is the basic process of the process state. Let's look at the details next.
 
-### Trace of Process
+#### Trace of Process
 
 + Sequence of instruction that execute for a process
 
@@ -163,7 +163,7 @@ This is the basic process of the process state. Let's look at the details next.
 
   <img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/09/26/0PoQU0.png" alt="" />
 
-### Two-State Process Model
+#### Two-State Process Model
 
 Process may be in one of two states:
 
@@ -183,7 +183,7 @@ Limit of Two-State Process Model:
 
 
 
-### The Creation and Termination of Processes
+#### The Creation and Termination of Processes
 
 Reasons for Process Creation
 
@@ -209,7 +209,7 @@ Reasons for Process Termination
 + Parent termination
 + Parent request
 
-### A Five-State Model
+#### A Five-State Model
 
 Five States:
 
@@ -229,7 +229,7 @@ Multiple Blocked Queues
 
 <img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/09/26/0PvI7F.png" alt="" />
 
-### Suspended Processes
+#### Suspended Processes
 
 + Processor is faster than I/O so all processes could be waiting for I/O
 + Swap these processes to disk to free up more memory
@@ -252,7 +252,7 @@ Reasons for Process Suspension:
 
 
 
-# 进程状态
+## 进程状态
 
 一个操作系统内核，允许多任务需要进程具有一定的状态。这些状态的名称并不统一，但它们的功能相似。
 
@@ -263,14 +263,14 @@ Reasons for Process Suspension:
 
 上面是进程状态的基本过程。接下来我们来看看细节。
 
-### 进程轨迹
+#### 进程轨迹
 
 + 进程执行的指令序列
 + 调度器将处理器从一个进程切换到另一个进程
 
 <img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/09/26/0PT7Y6.jpg" alt="" />
 
-### 双状态过程模型
+#### 双状态过程模型
 
 进程可能处于两种状态：
 
@@ -286,7 +286,7 @@ Reasons for Process Suspension:
   - 等待I/O指令（阻塞）
 + 分派器不能只考虑选择队列中最老的进程，相反，它应该扫描这个列表，查找那些未被阻塞且在队列中时间最长的进程。
 
-### 进程的产生和终止
+#### 进程的产生和终止
 
 进程产生的原因：
 
@@ -312,7 +312,7 @@ Reasons for Process Suspension:
 + 父进程终止
 + 父进程请求
 
-### 五状态进程模型
+#### 五状态进程模型
 
 五个状态：
 
@@ -330,7 +330,7 @@ Reasons for Process Suspension:
 
 <img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/09/26/0PvD0S.jpg" alt="" />
 
-### 被挂起（暂停）的进程
+#### 被挂起（暂停）的进程
 
 + 处理器的速度比I/O快，所以所有的进程都可能在等待I/O
 + 将这些进程交换到磁盘，以释放更多的内存
@@ -353,9 +353,9 @@ Reasons for Process Suspension:
 
 
 
-# Process Description
+## Process Description
 
-### Operating System Control Structures
+#### Operating System Control Structures
 
 + Information about the current status of each process and resource 
 + Tables are constructed for each entity the operating system manages 
@@ -388,7 +388,7 @@ Process Table: Every entry is a description of a process image
 
 Process Image: Collection of program, data, stack, attributes
 
-### Process Control Structures
+#### Process Control Structures
 
 + Process Identification
 
@@ -409,9 +409,9 @@ Process Image: Collection of program, data, stack, attributes
 
 
 
-# 进程的描述
+## 进程的描述
 
-### 操作系统的控制结构
+#### 操作系统的控制结构
 
 + 每个进程和资源的当前状态
 + 操作系统构造并维护他所管理的所有实体的信息表
@@ -444,7 +444,7 @@ I/O表：
 
 进程图像：程序、数据、栈、属性的集合
 
-### 进程控制结构
+#### 进程控制结构
 
 + 进程识别
 
@@ -461,16 +461,16 @@ I/O表：
   - 内存管理
   - 资源的所有权和利用情况
 
-# Execution of the Operating System
+## Execution of the Operating System
 
-### Non-process Kernel
+#### Non-process Kernel
 
 + Execute kernel outside of any process
 + Operating system code is executed as a separate entity that operates in privileged mode
 
 <img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/10/03/08CThV.png" alt="" />
 
-### Execution Within User Processes
+#### Execution Within User Processes
 
 + Operating system software within context of a user process
 + Process executes in privileged mode when executing operating system code
@@ -479,7 +479,7 @@ I/O表：
 
 <img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/10/03/08CLX4.png" alt="" />
 
-### Process-Based Operating System
+#### Process-Based Operating System
 
 + Implement operating system as a collection of system processes
 + Useful in multi-processor or multi-computer environment
@@ -490,16 +490,16 @@ I/O表：
 
 
 
-# 操作系统的执行
+## 操作系统的执行
 
-### 无进程内核
+#### 无进程内核
 
 + 在任何进程之外执行内核
 + 操作系统代码作为一个单独的实体，在特权模式下执行
 
 <img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/10/03/08CThV.png" alt="" />
 
-### 在用户进程中执行
+#### 在用户进程中执行
 
 + 用户进程中的操作系统软件
 + 执行操作系统代码时，进程在特权模式下执行
@@ -508,7 +508,7 @@ I/O表：
 
 <img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/10/03/08CLX4.png" alt="" />
 
-### 基于进程的OS
+#### 基于进程的OS
 
 + 将操作系统作为系统进程的集合来实施
 + 在多处理器或多计算机环境中有用

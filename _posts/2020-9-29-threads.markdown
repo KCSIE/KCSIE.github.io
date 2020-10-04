@@ -248,7 +248,7 @@ A process that implements multithread using thread library may be in the midst o
 + Kernel maintains context information for the process and the threads
 + Scheduling is done on a thread basis
 
-![0GjgdP.png](https://s1.ax1x.com/2020/10/04/0GjgdP.png)
+<img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/10/04/0GjgdP.png" alt="" />
 
 #### Difference between User Level thread and Kernel Level thread
 
@@ -276,7 +276,7 @@ A process that implements multithread using thread library may be in the midst o
 + The multiple ULTs from a single application are mapped onto some (smaller or equal) number of KLTs
 + Bulk of scheduling and synchronization of threads within application
 
-![0GzMPf.png](https://s1.ax1x.com/2020/10/04/0GzMPf.png)
+<img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/10/04/0GzMPf.png" alt="" />
 
 
 
@@ -325,7 +325,7 @@ A process that implements multithread using thread library may be in the midst o
 + 来自单一应用的多个ULT被映射到一些（较小或相等）数量的KLT上
 + 大量的调度和同步，在进程内进行
 
-![0JSelF.jpg](https://s1.ax1x.com/2020/10/04/0JSelF.jpg)
+<img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/10/04/0JSelF.jpg" alt="" />
 
 
 
