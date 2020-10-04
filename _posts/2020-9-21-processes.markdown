@@ -13,7 +13,7 @@ describe: 进程
 
 ## Background
 
-### What's a process?
+### What's the process?
 
 In computing, a process is the instance of a computer program that is being executed by one or many threads. It contains the program code and its activity. Depending on the operating system (OS), a process may be made up of multiple threads of execution that execute instructions concurrently.
 

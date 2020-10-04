@@ -1,0 +1,248 @@
+---
+layout: post
+title: Threads
+date: 2020-09-29 10:00:54 +0800
+categories: Study
+tags: Theory CPU ComputerScience
+img: https://s1.ax1x.com/2020/10/04/08yz6A.jpg
+author: KCSIE
+describe: 线程
+---
+## Introduction
+
+### What's the thread?
+
+In computer science, a thread of execution is the smallest sequence of programmed instructions that can be managed independently by a scheduler, which is typically a part of the operating system. The implementation of threads and processes differs between operating systems, but in most cases a thread is a component of a process. Multiple threads can exist within one process, executing concurrently and sharing resources such as memory, while different processes do not share these resources. In particular, the threads of a process share its executable code and the values of its dynamically allocated variables and non-thread-local global variables at any given time.
+
+
+
+### Difference between Process and Thread
+
++ Process means any program is in execution. Process control block controls the operation of any process. Process control block contains information about processes for example Process priority, process id, process state, CPU, register, etc. A process can creates other processes which are known as Child Processes. Process takes more time to terminate and it is isolated means it does not share memory with any other process.
++ Thread is the segment of a process means a process can have multiple threads and these multiple threads are contained within a process. A thread have 3 states: running, ready, and blocked. Thread takes less time to terminate as compared to process and unlike process threads which are often not isolated.
+
+
+
+|                           Process                            |                            Thread                            |
+| :----------------------------------------------------------: | :----------------------------------------------------------: |
+|          Process means any program is in execution.          |              Thread means segment of a process.              |
+|            Process takes more time to terminate.             |             Thread takes less time to terminate.             |
+|               It takes more time for creation.               |               It takes less time for creation.               |
+|        It also takes more time for context switching.        |          It takes less time for context switching.           |
+|     Process is less efficient in term of communication.      |      Thread is more efficient in term of communication.      |
+|               Process consume more resources.                |                Thread consume less resources.                |
+|                     Process is isolated.                     |                    Threads share memory.                     |
+|           Process is called heavy weight process.            |            Thread is called light weight process.            |
+|    Process switching uses interface in operating system.     | Thread switching does not require to call a operating system and cause an interrupt to the kernel. |
+| If one server process is blocked no other server process can execute until the first process unblocked. | Second thread in the same task could run, while one server thread is blocked. |
+| Process has its own Process Control Block, Stack and Address Space. | Thread has Parents’ PCB, its own Thread Control Block and Stack and common Address space. |
+
+### Distinguish
+
++ Resource ownership - process includes a virtual address space to hold the process image
++ Scheduling/execution - follows an execution path that may be interleaved with other processes
+
+These two characteristics are treated independently by the operating system.
+
++ Dispatching is referred to as a thread or lightweight process
++ Resource of ownership is referred to as a process or task
+
+
+
+## 引入
+
+### 什么是线程?
+
+在计算机科学中，执行线程是可以由通常是操作系统的一部分的调度器独立管理的最小的程序指令序列。不同的操作系统对线程和进程的实现不同，但在大多数情况下，一个线程是一个进程的组成部分。一个进程中可以存在多个线程，并发执行，共享内存等资源，而不同的进程则不共享这些资源。特别是，一个进程的线程在任何时候都共享其可执行代码及其动态分配的变量和非线程本地的全局变量的值。
+
+
+
+### 线程与进程的区别
+
++ 进程是指任何程序在执行中。进程控制块控制任何进程的运行。进程控制块包含了有关进程的信息，例如进程优先级、进程id、进程状态、CPU、寄存器等。一个进程可以创建其他进程，这些进程被称为子进程。进程终止需要更多的时间，它是孤立的，意味着它不与任何其他进程共享内存。
++ 线程是一个进程的段，意味着一个进程可以有多个线程，而这些多个线程都包含在一个进程中。一个线程有3种状态：运行、就绪和阻塞。与进程相比，线程终止所需的时间更短，而且和进程不一样线程往往不是孤立的。
+
+
+
+|                             进程                             |                            线程                             |
+| :----------------------------------------------------------: | :---------------------------------------------------------: |
+|                进程指的是任何正在执行的程序。                |                 线程指的是一个进程的片段。                  |
+|                  进程需要更多的时间来终止。                  |                   线程终止所需时间较少。                    |
+|                   它需要更多的时间去产生。                   |                  它需要更少的时间去产生。                   |
+|               它需要更多的时间进行上下文切换。               |              它需要更少的时间进行上下文切换。               |
+|                     进程通信的效率更低。                     |                     线程通信的效率更高                      |
+|                      进程占用更多资源。                      |                     线程占用更少资源。                      |
+|                        进程是孤立的。                        |                       线程共享内存。                        |
+|                     进程被称为重量进程。                     |                    线程被称为轻量进程。                     |
+|                进程切换使用操作系统中的接口。                |     线程切换不需要调用操作系统，不需要引起内核的中断。      |
+| 如果一个服务进程被阻塞，在第一个进程可以执行之前，其他服务进程不能执行。 |  当第一个服务线程被阻塞，同一任务中的第二个线程可以运行。   |
+|            进程有自己的进程控制块、栈和地址空间。            | 线程有父线的PCB，有自己的线程控制块和堆栈以及公共地址空间。 |
+
+### 区分
+
++ 资源所有权 - 进程包括一个虚拟地址空间，用于存放进程映像
++ 调度/执行 - 遵循可能与其他进程交错的执行路径
+
+这两个特性由操作系统独立处理。
+
++ 调度的单位称为线程或轻量进程
++ 资源所有权的单位称为进程或者任务
+
+
+
+## Multithreading
+
+### Single-Thread
+
+*Single-threaded approach* refers to the traditional approach of a single thread of execution per process, in which the concept of a thread is not recognized.
+
++ MS-DOS supports a single thread
++ Some UNIX supports multiple user processes but only supports one thread per process
+
+### Multithreading
+
+*Multithreading* refers to the ability of an OS to support multiple threads of execution within a single process.
+
++ Windows, Solaris, Linux, Mach, and OS/2 support multiple threads
+
+Multithreaded applications have the following advantages:
+
++ Responsiveness
++ Faster execution
++ Lower resource consumption
++ Better system utilization
++ Simplified sharing and communication
++ Parallelization
+
+Multithreading has the following drawbacks:
+
++ Synchronization
++ Thread crashes a process
+
+<img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/10/04/08hGan.png" alt="" />
+
+### Process Model
+
+Distinction Between Threads and Processes From the Point of View of Process Management 
+
+<img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/10/04/08hzZj.png" alt="" />
+
+### Benefits of Threads
+
++ Takes less time to create a new thread than a process 
++ Less time to terminate a thread than a process 
++ Less time to switch between two threads within the same process 
++ Since threads within the same process share memory and files, they can communicate with each other without invoking the kernel 
+
+### Threads are Affected by Many Process Action
+
++ Suspending a process involves suspending all threads of the process since all threads share the same address space 
++ Termination of a process, terminates all threads within the process 
+
+
+
+## 多线程
+
+### 单线程
+
+单线程指一个进程中只有一个线程在执行的传统方法，线程的概念并不明确
+
++ MS-DOS支持单线程(单进程、单线程)
++ 一些UNIX支持多用户进程但只支持每个进程的单线程(多进程, 每个进程单线程)
+
+### 多线程
+
+多线程指操作系统支持在一个进程中执行多个线程的能力
+
++ Windows, Solaris, Linux, Mach 和 OS/2 支持多线程
+
+多线程应用程序具有以下优势:
+
++ 响应性
++ 更快的执行速度
++ 降低资源消耗
++ 提高系统利用率
++ 简化分享和通信
++ 平行化
+
+多线程有以下缺点:
+
++ 同步化
+
++ 线程可能会使进程崩溃
+
+<img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/10/04/086SOI.gif" alt="" />
+
+### 进程模型
+
+从进程管理的角度看线程和进程
+
+<img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/10/04/08IgGq.jpg" alt="" />
+
+### 线程的优点
+
++ 比进程创建快
++ 比进程结束快
++ 同一进程中两线程切换快
++ 由于同一进程中的线程共享内存和文件，它们可以在不调用内核的情况下更快地相互通信
+
+### 线程受很多进程操作的影响
+
++ 挂起进程会挂起该进程的所有线程
++ 终止进程会终止该进程的所有线程
+
+
+
+## Thread Functionality 
+
+### Thread States
+
+Operations associated with a change in thread state
+
++ Spawn (Spawn another thread)
++ Block
++ Unblock
++ Finish (Deallocate register context and stacks)
+
+### Remote Procedure Call Using Single Thread/Threads
+
+<img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/10/04/0GF7R0.png" alt="" />
+
+<img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/10/04/0GFTGq.png" alt="" />
+
+## 线程功能特性 
+
+### 线程状态
+
+Operations associated with a change in thread state
+
++ 派生 (派生另一个线程)
++ 阻塞
++ 解除阻塞
++ 结束 (重新分配寄存器上下文和堆栈)
+
+### 使用单/多线程的远程程序调用
+
+<img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/10/04/0GF7R0.png" alt="" />
+
+<img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/10/04/0GFTGq.png" alt="" />
+
+## Types of Threads
+
+### User-Level Threads (ULT)
+
++ Multithread implemented by a threads library
++ All thread management is done by the application
++ The kernel is not aware of the existence of threads & scheduling is done on a process basis
+
+<img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/10/04/0GAzgx.png" alt="" />
+
+<img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/10/04/0GAx81.png" alt="" />
+
+![0GAx81.png](https://s1.ax1x.com/2020/10/04/0GAx81.png)
+
+
+
+
+
+<img style="display: block; margin: 0 auto;" src="" alt="" />
