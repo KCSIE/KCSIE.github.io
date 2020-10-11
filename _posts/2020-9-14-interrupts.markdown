@@ -3,10 +3,10 @@ layout: post
 title: Interrupts
 date: 2020-09-09 20:52:49 +0800
 categories: Study
-tags: Theory CPU I/O Memory ComputerScience
+tags: Theory CPU I/O Memory OS
 img: https://s1.ax1x.com/2020/09/14/wrqgwq.png
 author: KCSIE
-describe: 中断
+describe: 中断 (Operating System-1/操作系统-1)
 ---
 
 <img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/09/14/wrqgwq.png" alt="" />
@@ -60,6 +60,7 @@ In simple terms, interruptions have the following main benefits:
   - > interprocessor interrupt-A special type of hardware interrupt. Issued by the processor and received by other processors. Only seen in multiprocessor systems to facilitate interprocessor communication or synchronization
   - > spurious interrupt-A spurious interrupt is an invalid, short-duration signal on an interrupt input. These are usually caused by glitches resulting from electrical interference, race conditions, or malfunctioning devices
 + Software Interrupt:
+  
   - > A software interrupt is requested by the processor itself upon executing particular instructions or when certain conditions are met. Every software interrupt signal is associated with a particular interrupt handler. A software interrupt may be intentionally caused by executing a special instruction which, by design, invokes an interrupt when executed. Such instructions function similarly to subroutine calls and are used for a variety of purposes, such as requesting operating system services and interacting with device drivers (e.g., to read or write storage media)
 
 ## 分类
@@ -69,6 +70,7 @@ In simple terms, interruptions have the following main benefits:
   - > 处理器间中断-一种特殊的硬件中断。由处理器发出，被其它处理器接收。仅见于多处理器系统，以便于处理器间通信或同步
   - > 伪中断-一类不希望被产生的硬件中断。发生的原因有很多种，如中断线路上电气信号异常，或是中断请求设备本身有问题
 + 软件中断：
+  
   - > 是一条CPU指令，用以自陷一个中断。由于软中断指令通常要运行一个切换CPU至内核态（Kernel Mode/Ring 0）的子例程，它常被用作实现系统调用（System call）
 
 ## Process
