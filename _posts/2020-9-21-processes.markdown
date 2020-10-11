@@ -3,7 +3,7 @@ layout: post
 title: Processes
 date: 2020-09-21 21:48:15 +0800
 categories: Study
-tags: Theory CPU I/O OS
+tags: Theory CPU I/O OperatingSystem
 img: https://s1.ax1x.com/2020/09/21/wqQkHU.png
 author: KCSIE
 describe: 进程 (Operating System-2/操作系统-2)
