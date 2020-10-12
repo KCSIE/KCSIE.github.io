@@ -26,11 +26,11 @@ There are usually two ways to measure the execution time of a program:
 
 A program's runtime is characterized by its time and space complexity.
 
-<img style="display: block; margin: 0 auto;" src="https://bkimg.cdn.bcebos.com/formula/f1efd43e838dc4e51938e9f3728d3241.svg" alt="" />
+<img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/10/12/0WMck9.png" alt="" />
 
 The above formula indicates that as the size of the problem n increases, the growth rate of the algorithm execution time is the same as the growth rate of f(n), called the asymptotic time complexity of the algorithm, referred to as the time complexity.
 
-<img style="display: block; margin: 0 auto;" src="https://bkimg.cdn.bcebos.com/formula/6afccbcf4be4bc550afadbc806c062fd.svg" alt="" />
+<img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/10/12/0WMyTJ.png" alt="" />
 
 The above formula represents the spatial complexity. Space complexity can be a measure of the storage space required by an algorithm. If the auxiliary space required for the execution of the algorithm is a constant relative to the amount of input data, then the algorithm is said to work in-place, the space complexity is O(1).
 
@@ -65,11 +65,11 @@ For maximum efficiency we wish to minimize resource usage. However, different re
 
 度量一个程序运行时间的方式通过时间复杂度和空间复杂度来表征。
 
-<img style="display: block; margin: 0 auto;" src="https://bkimg.cdn.bcebos.com/formula/f1efd43e838dc4e51938e9f3728d3241.svg" alt="" />
+<img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/10/12/0WMck9.png" alt="" />
 
 上式表示随问题规模n的增大，算法执行时间的增长率和f(n)的增长率相同，称作算法的渐近时间复杂度，简称时间复杂度。
 
-<img style="display: block; margin: 0 auto;" src="https://bkimg.cdn.bcebos.com/formula/6afccbcf4be4bc550afadbc806c062fd.svg" alt="" />
+<img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/10/12/0WMyTJ.png" alt="" />
 
 上式表示空间复杂度。空间复杂度可以作为算法所需存储空间的量度。若额外空间相对于输入数据量来说是常数，则称此算法为原地工作，空间复杂度为O(1)。
 
@@ -343,7 +343,7 @@ The time spent is in order of:
 
 O(1) < O(logn) < O(n) < O(nlogn) < 0(n²) < 0(n³) < 0(2^n) < O(n!) < O(n^n) 
 
-<img style="display: block; margin: 0 auto;" src="https://upload-images.jianshu.io/upload_images/42676-bbe7324ed0878134.png?imageMogr2/auto-orient/strip|imageView2/2/w/819/format/webp" alt="" />
+<img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/10/12/0WQp7Q.jpg" alt="" />
 
 ## 化简与计算规则
 
@@ -471,6 +471,6 @@ O(1) < O(logn) < O(n) < O(nlogn) < 0(n²) < 0(n³) < 0(2^n) < O(n!) < O(n^n)
 
 O(1) < O(logn) < O(n) < O(nlogn) < 0(n²) < 0(n³) < 0(2^n) < O(n!) < O(n^n) 
 
-<img style="display: block; margin: 0 auto;" src="https://upload-images.jianshu.io/upload_images/42676-bbe7324ed0878134.png?imageMogr2/auto-orient/strip|imageView2/2/w/819/format/webp" alt="" />
+<img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/10/12/0WQp7Q.jpg" alt="" />
 
 <img style="display: block; margin: 0 auto;" src="" alt="" />
