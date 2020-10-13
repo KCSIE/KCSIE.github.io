@@ -1,32 +1,14 @@
 - name: bilibili
   url:  https://space.bilibili.com/10965159
 
-- name: facebook
-  url: 
-
 - name: github
   url:  https://github.com/KCSIE
 
-- name: gplus
-  url: 
-
-- name: instagram
-  url: 
+- name: 
+  url:  
 
 - name: linkedin
-  url: 
-
-- name: telegram
-  url: 
-
-- name: tumblr
-  url: 
-
-- name: twitter
-  url: 
-
-- name: weibo
-  url: 
+  url:  
 
 - name: zhihu
   url: 
