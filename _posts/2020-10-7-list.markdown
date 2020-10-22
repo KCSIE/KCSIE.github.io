@@ -1,0 +1,683 @@
+---
+layout: post
+title: List, Arraylist&Linkedlist
+date: 2020-10-07 19:36:18 +0800
+categories: Study
+tags: Theory AlgorithmAnalysis
+img: https://s1.ax1x.com/2020/10/20/Bp65o6.jpg
+author: KCSIE
+describe: 线性表，顺序表与链表 (Data Structures & Algorithm Analysis-2/数据结构与算法分析-2)
+---
+
+ 
+
+## 线性表
+
+#### 什么是线性表
+
+线性表，全名为线性存储结构，是一种常用的数据结构。线性表是零个或多个数据元素的有限序列，这些数据具有“一对一”的关系。
+
+线性表具有以下特征：
+
++ 集合中必存在唯一的一个“第一个元素”
++ 集合中必存在唯一的一个 “最后一个元素”
++ 除第一元素之外，均有唯一的前驱（某一元素的左侧相邻元素称为“直接前驱”，位于此元素左侧的所有元素都统称为“前驱元素”）
++ 除最后元素在外，均有唯一的后继（某一元素的右侧相邻元素称为“直接后继”，位于此元素右侧的所有元素都统称为“后继元素”）
+
+线性表具有以下两种物理存储结构：
+
++ 顺序存储
+  + 顺序表
+
++ 链式存储
+  + 单链表
+  + 双链表
+  + 循环链表
+  + 静态链表
+
+#### 线性表的操作
+
+线性表的ADT如下：
+
+```
+InitList(*L):			//初始化一个线性表
+ListEmpty(L):			//判断是否为空表，空为True，非空为False
+ClearList(*L):			//清空线性表
+GetElem(L,i,*e):	    //将表中的第i个元素，返回给e
+LocateElem(L,e)：	   //查找表中是否有与e相等的元素。成功，返回序号；若失败，返回0
+ListInsert(*L,i,e):	    //在线性表的第i个位置，插入新元素e
+ListDelete(*L,i,*e):	//删除线性表中的第i个元素，并将值返回给e
+ListLength(L):			//返回线性表元素的个数
+```
+
+
+
+## 顺序表
+
+#### 什么是顺序表
+
+线性表的顺序存储指用一段地址连续的存储单元依次存储线性表的数据元素。顺序表使用数组实现，一组地址连续的存储单元，数组大小有两种方式指定，一是静态分配，二是动态扩展。
+
+注意：和数组不一样，数组的长度是存放线性表的存储空间的长度，存储分配后这个量一般是不变的，而线性表长度是线性表中数据元素的个数，随着插入和删除的操作长度会变化。这里要区分数组长度和线性表的长度是不一样的。在任意时刻，线性表的长度应该小于等于数组的长度。
+
+<img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/10/22/BiAB8J.jpg" alt="" />
+
+#### 存储方式
+
+每个数据元素的类型都相同，用一维数组来实现
+
+```
+#define MAXSIZE 10;//存储空间初始分配量即最大长度   
+type struct  
+{  
+    ElemType data[MAXSIZE];//用静态“数组”存储数据元素  
+    int length;//顺序表当前长度  
+}SqList;//顺序表的类型定义（静态分配）
+```
+
+需要的三个属性：
+
++ 存储空间的起始位置：数组data，它的存储位置就是存储空间的存储位置
++ 线性表的最大存储容量：数组长度MAXSIZE
++ 线性表的当前长度：length
+
+#### 地址计算方式
+
+若每个存储元素占用c个存储单元，那么线性表中元素的位置可以由此计算出：
+$$
+LOC(ai)= LOC(a1) + (i-1)*c
+$$
+可以随时算出线性表中任意位置的地址，使用相同的时间。它的存取时间性能为O(1)，这一特点的存储结构称之为随机存取结构。
+
+<img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/10/22/BiAcb6.jpg" alt="" />
+
+#### 实现与操作
+
+```c++
+#include<iostream>
+ using namespace std;
+ int maxSize = ;
+ 
+ // 定义
+ template <class T>
+ class SqListClass
+ {
+     private:
+         T *data; // 存放顺序表中的元素
+         int length; // 存放顺序表的长度
+ 
+     public:
+         SqListClass(int length); // 构造函数
+         SqListClass(); // 构造函数
+         ~SqListClass(); // 析构函数
+         void CreateList(T a[], int n); // 由a数组中的元素建造顺序表
+         void DispList(); // 输出顺序表L中的所有元素
+         int ListLength(); // 求顺序表的长度
+         bool GetElem(int i, T &e); // 求顺序表中某序列号的元素值
+         int LocateElem(T e); // 按元素查找其第一个序号位置
+         bool ListInsert(int i, T e); // 在位置i插入数据元素e
+         bool ListDelete(int i); // 在位置i删除数据元素
+         void ReverseList(SqListClass<T> &L); // 翻转顺序表
+ 
+         //操作时候的函数
+ //        void CreateList_();
+ //        void QuitSystem();
+ };
+ 
+ // 线性表的初始化
+ template<class T>
+ SqListClass<T>::SqListClass(int length) // 构造函数
+ {
+     data = new T[length];
+     length = ;
+ }
+ template<class T>
+ SqListClass<T>::SqListClass() // 构造函数
+ {
+     data = new T[maxSize];
+     length = ;
+ }
+ // 线性表的销毁
+ template<class T>
+ SqListClass<T>::~SqListClass() // 析构函数
+ {
+     delete [] data;
+ }
+ 
+ // 实现
+ 
+ // 线性表的创建，时间复杂度为O(n)
+ template<class T>
+ void SqListClass<T>::CreateList(T a[], int n)
+ {
+     int i;
+     for(i=; i<n; i++){
+         data[i] = a[i];
+     }
+     length = i;
+ }
+ 
+ // 输出线性表的所有元素，时间复杂度为O(n)
+ template<class T>
+ void SqListClass<T>::DispList(){
+     cout << "Out:" << endl;
+     for(int i=; i<length; i++){
+         cout << data[i] << " ";
+     }
+     cout << endl;
+ }
+ 
+ // 求线性表的长度，时间复杂度为O(1)
+ template<class T>
+ int SqListClass<T>::ListLength(){
+     return length;
+ }
+ 
+ // 求顺序表中某序列号的元素值,，时间复杂度为O(1)
+ template<class T>
+ bool SqListClass<T>::GetElem(int i, T &e){
+     if(i< || i>length) return false;
+     e = data[i-];
+     return true;
+ }
+ 
+ // 按元素查找其第一个序号位置，时间复杂度为O(n)
+ template<class T>
+ int SqListClass<T>::LocateElem(T e){
+     int i = ;
+     while(i<length && data[i]!=e) i++;
+     if(i>=length) return ;
+     else return i+;
+ }
+ 
+ // 在位置i插入数据元素e，时间复杂度为O(n)
+ template<class T>
+ bool SqListClass<T>::ListInsert(int i, T e){
+     if(i< || i>length) return false;
+     for(int j=length; j>=i; j--){
+         data[j]=data[j-];
+     }
+     data[i-] = e;
+     length++;
+     return true;
+ }
+ 
+ // 在位置i删除数据元素，时间复杂度为O(n)
+ template<class T>
+ bool SqListClass<T>::ListDelete(int i){
+     if(i< || i>length) return false;
+     for(int j=i-; j< length; j++){
+         data[j] = data[j+];
+     }
+     length--;
+     return true;
+ }
+ 
+ // 翻转顺序表
+ template<class T>
+ void SqListClass<T>::ReverseList(SqListClass<T> &L){
+     T temp;
+     for(int j=; j<L.length/; j++){
+         temp = L.data[j];
+         L.data[j] = L.data[length-j-];
+         L.data[length-j-] = temp;
+     }
+ }
+```
+
+#### 顺序表优缺
+
+优点：
+
++ 无须为表示表中元素之间的逻辑关系而增加额外的存储空间
++ 可以快速地存取表中任一位置的元素
+
+缺点：
+
++ 插入和删除操作需要移动大量元素（中间没有间隙）
++ 当线性表长度变化较大时，难以确定存储空间的容量
++ 造成存储空间的“碎片”（两个大型的线性表之间间隔的地址）
+
+
+
+## 链表
+
+#### 什么是链表
+
+链表是一种物理存储单元上非连续、非顺序的存储结构，数据元素的逻辑顺序是通过链表中的指针链接次序实现的，使用链表存储的数据元素，其物理存储位置是随机的。链表由一系列结点（链表中每一个元素称为结点）组成，结点可以在运行时动态生成。每个结点包括两个部分：一个是存储数据元素的数据域，另一个是存储下一个结点地址的指针域。
+
+单链表：n个结点（ai的存储映像，每个结点中只包括一个指针域）链接成一个链表，即为线性表（a1,a2,….an）的链式存储结构。
+
+<img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/10/22/BiAaUU.jpg" alt="" />
+
+<img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/10/22/BiAd5F.jpg" alt="" />
+
+#### 头指针与头结点
+
++ 头指针：链表中第一个结点的存储位置
+  + 头指针是指链表指向第一个结点的指针，若链表有头结点，则是指向头结点的指针
+  + 头指针具有标识作用，常用头指针冠以链表的名字
+  + 无论链表是否为空，头指针均不为空。头指针是链表的必要元素
+
++ 头结点：有时为了便于操作，在单链表的第一个结点前附设一个结点，称为头结点。头结点的数据域可以不存信息，可以存线性表的长度等附加信息，头结点的指针域指向第一个结点的指针
+  + 头结点是为了操作的统一和方便设立的，在第一个元素的结点之前，其数据域一般无意义（或存放链表长度）
+  + 有了头结点，对在第一个元素结点前插入结点和删除第一结点，其操作与其他结点的操作就统一了
+  + 头结点不一定是链表必须要素
+
+<img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/10/22/BiA6Dx.jpg" alt="" />
+
+<img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/10/22/BiArvR.jpg" alt="" />
+
+#### 单链表的实现与操作
+
+定义单链表的结构可以有4方式，下面以第四种为例：
+
+```c++
+/*************************************************************************
+1、复合类：在Node类中定义友元的方式，使List类可以访问结点的私有成员
+*************************************************************************/
+class LinkNode
+{
+    friend class LinkList;
+private:
+    int data;
+    LinkNode *next;
+};
+
+class LinkList
+{
+public:
+    //单链表具体操作
+private:
+    LinkNode *head;
+}; 
+
+/*************************************************************************
+2、嵌套类：在List内部定义Node类，但是Node的数据成员放在public部分，使List
+和Node均可以直接访问Node的成员
+*************************************************************************/
+class LinkList
+{
+public:
+    //单链表具体操作
+private:
+    class LinkNode
+    {
+    public:
+        int data;
+        LinkNode *next;
+    };
+    LinkNode *head;
+}; 
+
+/*************************************************************************
+3、继承：在Node类中把成员定义为protected，然后让List继承Node类，这样就可以
+访问Node类的成员了。
+*************************************************************************/
+class LinkNode
+{
+protected:
+    int data;
+    LinkNode *next;
+};
+
+class LinkList : public LinkNode
+{
+public:
+    //单链表具体操作
+private:
+    LinkNode *head;
+}; 
+
+/*************************************************************************
+4、直接用struct定义Node类，因为struct的成员默认为公有数据成员，所以可直接
+访问（struct也可以指定保护类型）。
+*************************************************************************/
+struct LinkNode
+{
+    int data;
+    LinkNode *next;
+};
+
+class LinkList
+{
+public:
+    //单链表具体操作
+private:
+    LinkNode *head;
+}; 
+```
+
+单链表的模板类定义：
+
+```c++
+/* 单链表的结点定义 */
+template<class T>
+struct LinkNode
+{
+    T data;
+    LinkNode<T> *next;
+    LinkNode(LinkNode<T> *ptr = NULL){next = ptr;}
+    LinkNode(const T &item, LinkNode<T> *ptr = NULL)    
+    //函数参数表中的形参允许有默认值，但是带默认值的参数需要放后面
+    {
+        next = ptr;
+        data = item;
+    }
+};
+
+/* 带头结点的单链表定义 */
+template<class T>
+class LinkList
+{
+public:
+    LinkList(){head = new LinkNode<T>;} //无参数的构造函数
+    LinkList(const T &item){head = new LinkNode<T>(item);} //带参数的构造函数
+    LinkList(LinkList<T> &List); //拷贝构造函数
+    ~LinkList(){Clear();} //析构函数
+    LinkList<T>& operator=(LinkList<T> &List); //重载函数:赋值
+    void Clear(); //链表清空
+    int Length() const; //获取链表长度
+    LinkNode<T>* GetHead() const; //获取链表头结点
+    void SetHead(LinkNode<T> *p); //设置链表头结点
+    LinkNode<T>* Find(T &item); //查找数据的位置，返回第一个找到的满足该数值的结点指针
+    LinkNode<T>* Locate(int pos); //定位指定的位置，返回该位置上的结点指针
+    bool Insert(T &item, int pos); //在指定位置pos插入值为item的结点，失败返回false
+    bool Remove(int pos, T &item); //删除指定位置pos上的结点，item就是该结点的值，失败返回false
+    bool GetData(int pos, T &item); //获取指定位置pos的结点的值，失败返回false
+    bool SetData(int pos, T &item); //设置指定位置pos的结点的值，失败返回false
+    bool IsEmpty() const; //判断链表是否为空
+    void Print() const; //打印链表
+    void Sort(); //链表排序
+    void Reverse(); //链表逆置
+private:
+    LinkNode<T> *head;
+};
+```
+
+定位位置：
+
+```c++
+/* 返回链表中第pos个元素的地址，如果pos<0或pos超出链表最大个数返回NULL */
+template<class T>
+LinkNode<T>* LinkList<T>::Locate(int pos)
+{
+    int i = 0;
+    LinkNode<T> *p = head;
+
+    if (pos < 0)
+        return NULL;
+
+    while (NULL != p && i < pos)
+    {
+        p = p->next;
+        i++;
+    }
+    
+    return p;
+}
+```
+
+插入结点：
+
+<img style="display: block; margin: 0 auto;" src="https://images0.cnblogs.com/blog/318837/201407/062113027776206.jpg" alt="" />
+
+要在p结点后插入一个新结点node
+
++ 要让node的next指针指向p的next结点
++ 再让p的next指向node结点
+
+接下来：node->next = p->next; p->next = node;
+
+```c++
+template<class T>
+bool LinkList<T>::Insert(T &item, int pos)
+{
+    LinkNode<T> *p = Locate(pos);
+    if (NULL == p)
+        return false;
+
+    LinkNode<T> *node = new LinkNode<T>(item);
+    if (NULL == node)
+    {
+        cerr << "分配内存失败!" << endl;
+        exit(1);
+    }
+    node->next = p->next;
+    p->next = node;
+    return true;
+}
+```
+
+删除结点：
+
+<img style="display: block; margin: 0 auto;" src="https://images0.cnblogs.com/blog/318837/201407/062135417155404.jpg" alt="" />
+
+删除pos位置的结点，如果这个位置不存在结点，则返回false；
+
+如果找到对应结点，则通过实参item输出要删除的结点的数值， 然后删除结点并返回true
+
+```c++
+template<class T>
+bool LinkList<T>::Remove(int pos, T &item)
+{
+    LinkNode<T> *p = Locate(pos);
+    if (NULL == p || NULL == p->next)
+        return false;
+
+    LinkNode<T> *del = p->next;
+    p->next = del->next;
+    item = del->data;
+    delete del;
+    return true;
+}
+```
+
+清空链表：
+
+遍历整个链表，每次head结点的next指针指向的结点，直到next指针为空，最后保留head结点
+
+```c++
+template<class T>
+void LinkList<T>::Clear()
+{
+    LinkNode<T> *p = NULL;
+
+    //遍历链表，每次都删除头结点的next结点，最后保留头结点
+    while (NULL != head->next)
+    {
+        p = head->next;
+        head->next = p->next;   //每次都删除头结点的next结点
+        delete p;
+    }
+}
+```
+
+求链表长度与打印链表：
+
+遍历链表结点
+
+```c++
+template<class T>
+void LinkList<T>::Print() const
+{
+    int count = 0;
+    LinkNode<T> *p = head;
+    while (NULL != p->next)
+    {
+        p = p->next;
+        std::cout << p->data << " ";
+        if (++count % 10 == 0)  //每隔十个元素，换行打印
+            cout << std::endl;
+    }
+}
+
+template<class T>
+int LinkList<T>::Length() const
+{
+    int count = 0;
+    LinkNode<T> *p = head->next;
+    while (NULL != p)
+    {
+        p = p->next;
+        ++count;
+    }
+    return count;
+} 
+```
+
+链表倒置：
+
+<img style="display: block; margin: 0 auto;" src="https://images0.cnblogs.com/blog/318837/201407/062239014341872.jpg" alt="" />
+
+1. 初始状态：prev = head->next; curr = prev->next;
+2. 让链表的第一个结点的next指针指向空
+3. 开始进入循环处理，让next指向curr结点的下一个结点；再让curr结点的next指针指向prev。即：next = curr->next; curr->next = prev; 
+4. 让prev、curr结点都继续向后移位。即：prev = curr; curr = next;
+5. 重复3、4动作，直到curr指向空。这时循环结束，让haed指针指向prev，此时的prev是倒置后的第一个结点。即：head->next = prev;
+
+```c++
+template<class T>
+void LinkList<T>::Reverse()
+{
+    LinkNode<T> *pre = head->next;
+    LinkNode<T> *curr = pre->next;
+    LinkNode<T> *next = NULL;
+
+    head->next->next = NULL;
+    while (curr)
+    {
+        next = curr->next;
+        curr->next = pre;
+        pre = curr;
+        curr = next;
+    }
+
+    head->next = pre;
+}
+```
+
+#### 顺序表与单链表比较
+
+| 存储类别     | 顺序存储结构                                     | 单链表                                                 |
+| :----------- | :----------------------------------------------- | :----------------------------------------------------- |
+| 存储分配方式 | 用一段连续的存储单元依次存储线性表的数据元素     | 采用链式存储结构，用一组任意的存储单元存放线性表的元素 |
+| 时间性能     | 查找O（1）、插入和删除O（n）                     | 查找O（n）、插入和删除O（1）                           |
+| 空间性能     | 需要预分配存储空间，分大了浪费，小了容易发生上溢 | 不需要分配存储空间，只要有就可以分配，元素个数不受限制 |
+
+一些经验结论：
+
+- 若线性表需要频繁查找，很少进行插入、删除操作，宜采用顺序存储结构。若需要频繁插入和删除时，宜采用单链表结构。比如游戏开发中，用户注册的个人信息，除注册时插入数据外，绝大多数是读取，所以应该考虑顺序存储结构。而玩家的武器或装备列表，可能随时增加或减少，这时可以考虑单链表结构。
+- 当线性表中的元素个数变化较大或根本不知道有多大时，最好用单链表结构，这样可以不需要考虑存储空间的大小问题。而事先知道线性表的大致长度，比如一年12个月，这种用顺序结构效率会高很多。
+
+#### 静态链表
+
+静态链表是链表的游标实现，用数组描述的链表叫做静态链表。数组的每个下表都对应一个data和一个cur，数据域data用于存放数据元素，cur相当于单链表中的next指针，存放该元素后继在数组中的下标。静态链表是了给没有指针的高级语言设计的一种实现单链表能力的方法。
+
+<img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/10/22/BiAD29.jpg" alt="" />
+
+特点：
+
+1. 静态链表规定数组的第一个元素和最后一个元素的data不能有数据。
+2. 元素的游标指向数组下标。
+3. 数组尾的游标指向第一个有数据元素的下标。
+4. 数组头的游标指向静态链表的结尾(有数据的后一个，即备用链表的第一个结点的下标)。
+5. 最后一个有数据的元素游标指回下标0（链表头）。
+6. 其余有效元素游标都是指向游标的下一个有效元素的下标（第一个元素的游标是50，下一个元素的下标即是50）。
+7. 通常把未使用数组元素称为备用链表。
+
+ 优缺：
+
++ 优点:
+
+  在插入和删除操作时，只需要修改游标，不需要移动元素，从而改进了在顺序存储结构中的 插人和删除操作需要移动大量元素的缺点
+
++ 缺点：
+
+  + 没有解决连镇存储分配带来的表长难以确定的问题
+  + 失去了顺序存储结构随机存取的特性
+
+#### 循环链表
+
+将单链表中终端结点的指针端由空指针改为指向头结点，就使整个单链表形成一个环，这种头尾相接的单链表称为单循环链表，简称循环链表。
+循环链表解决了如何从当中一个结点出发，访问到链表的全部结点的问题。
+为使空链表与非空链表处理一致，通常设置一个头结点。
+
+循环链表带有头节点的空链表：
+
+<img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/10/22/BiVpfe.jpg" alt="" />
+
+非空循环链表：
+
+<img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/10/22/BiVCSH.jpg" alt="" />
+
+<img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/10/22/BiVPld.jpg" alt="" />
+
+#### 双向链表
+
+双向链表是在单链表的每个结点中，再设置一个指向其前驱结点的指针域。所以在双向链表中的结点都有两个指针域，一个指向直接后继，另一个指向直接前驱。
+
+<img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/10/22/BimHN6.jpg" alt="" />
+
+插入操作：
+
+顺序是先搞定s的前驱和后继，再搞定后结点的前驱，最后解决前结点的后继。
+
+<img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/10/22/Bim7Ax.jpg" alt="" />
+
+```c++c
+s->prior=p;//把p赋值给s的前驱，如①
+s->next=p->next; //把p->next赋值给s的后继，如②
+p->next->prior=s; //把s赋值给p->next的前驱，如③
+p->next=s; //把s赋值给p的后继，如④
+```
+
+删除操作：
+
+如果要删除结点p，只需以下操作。
+
+<img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/10/22/Bimb4K.jpg" alt="" />
+
+```
+p->prior->next=p->next; //把p->next赋值给p->prior的后继，如图①
+p->next->prior=p->prior; //把p->prior赋值给p->next的前驱，如②
+```
+
+特点：
+
+由于多了prior指针，对于插入和删除操作要注意。因为每个结点是两份指针，所以在空间上是要占用略多。不过因为良好的对称性，使得对某个结点的前后结点的操作带来了方便，可以有效提高算法的时间性能，即用空间换时间。
+
++ 从任意一个结点开始，可以查找链表中的其他任意结点
++ 既可以依照后继的方向（向后）遍历，也可以依照前驱的方向（向前）遍历
++ 每个指针域中都增加了一个存储指针的空间，降低了存储密度
++ 可以在当前结点前面或者后面插入，可以删除前趋和后继（包括结点自己）
++ 单链表只能在结点后面插入和删除
++ 双向链表通过增加一定的空间复杂度，降低了向前遍历的时间复杂度
+
+#### 链表优缺
+
+优点：
+
++ 在链表中做插入删除操作时，不会影响前面和后面的节点，因此对n较大的链表效率高
++ 不需要预先分配足够大的存储空间，避免造成空间闲置或溢出的情况
+
+缺点：
+
++ 需要进行指针操作，方法复杂
++ 需要为表示结点间的逻辑关系（指针变量）而增加额外的存储开销
++ 只能通过遍历找到某个节点，不能使用下标直接定位节点
+
+与顺序表比较：
+
++ 顺序表可以顺序存取，也支持随机存取；链表只能顺序存取
++  顺序表逻辑上相邻的物理上也相邻；而链表不一定，它是用指针来描述元素之间的关系
++ 顺序表插入和删除要移动大量元素；链表只需修改指针即可
+
+本文参考：
+
+```
+1.《大话数据结构》
+2. https://www.bbsmax.com/A/o75NPL9DzW/  
+3. https://www.cnblogs.com/jingmoxukong/p/3827011.html
+```
+
