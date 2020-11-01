@@ -3,7 +3,7 @@ layout: post
 title: List, Arraylist&Linkedlist
 date: 2020-10-07 19:36:18 +0800
 categories: Study
-tags: Theory AlgorithmAnalysis
+tags: Theory DataStructures
 img: https://s1.ax1x.com/2020/10/20/Bp65o6.jpg
 author: KCSIE
 describe: 线性表，顺序表与链表 (Data Structures & Algorithm Analysis-2/数据结构与算法分析-2)
