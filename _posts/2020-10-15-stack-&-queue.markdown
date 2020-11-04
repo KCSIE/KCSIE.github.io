@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Stack & Queue
+title: Stack & Queue (Reprint)
 date: 2020-10-15 10:59:26 +0800
 categories: Study
 tags: Theory DataStructures
 img: https://s1.ax1x.com/2020/11/01/BdxaPx.jpg
 author: Reprint 转载
-describe: 栈与队列 (Data Structures & Algorithm Analysis-3/数据结构与算法分析-3)
+describe: 栈与队列 (转载) (Data Structures & Algorithm Analysis-3/数据结构与算法分析-3)
 ---
 
 ## 栈
