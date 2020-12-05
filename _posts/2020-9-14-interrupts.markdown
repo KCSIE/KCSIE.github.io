@@ -6,7 +6,7 @@ categories: Study
 tags: Theory CPU I/O Memory OperatingSystem
 img: https://s1.ax1x.com/2020/09/14/wrqgwq.png
 author: KCSIE
-describe: 中断 (Operating System-1/操作系统-1)
+describe: 中断 
 ---
 
 <img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/09/14/wrqgwq.png" alt="" />

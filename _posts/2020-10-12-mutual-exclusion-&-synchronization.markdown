@@ -6,7 +6,7 @@ categories: Study
 tags: Theory CPU OperatingSystem
 img: https://s1.ax1x.com/2020/10/24/BVnO3t.png
 author: KCSIE
-describe: 并发-互斥与同步 (Operating System-4/操作系统-4)
+describe: 并发-互斥与同步 
 ---
 
 ## Concurrency

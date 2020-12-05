@@ -6,7 +6,7 @@ categories: Study
 tags: Theory CPU OperatingSystem
 img: https://s1.ax1x.com/2020/10/04/08yz6A.jpg
 author: KCSIE
-describe: 线程 (Operating System-3/操作系统-3)
+describe: 线程 
 ---
 ## Introduction
 

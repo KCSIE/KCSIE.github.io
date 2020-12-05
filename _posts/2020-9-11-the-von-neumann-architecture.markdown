@@ -6,7 +6,7 @@ categories: Study
 tags: Theory CPU I/O Memory ComputerOrganization&Architecture
 img: https://s1.ax1x.com/2020/09/11/wtHYbd.png
 author: KCSIE
-describe: 冯-诺依曼结构 (Computer Organization & Architecture-1/计算机组成与体系结构-1)
+describe: 冯-诺依曼结构 
 ---
 
 <img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/09/11/wtHYbd.png" alt="" />

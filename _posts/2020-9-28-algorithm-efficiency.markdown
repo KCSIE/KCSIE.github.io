@@ -6,7 +6,7 @@ categories: Study
 tags: Theory AlgorithmAnalysis
 img: https://s1.ax1x.com/2020/10/11/0cMdFP.png
 author: KCSIE
-describe: 算法效率 (Data Structures & Algorithm Analysis-1/数据结构与算法分析-1)
+describe: 算法效率 
 ---
 
 
