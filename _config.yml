@@ -15,9 +15,9 @@ timezone: Asia/Shanghai
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # --------------------------
-title: Chirpy                          # the main title
+title: KCSIE BLOG                     # the main title
 
-tagline: A text-focused Jekyll theme   # it will display as the sub-title
+tagline: Record Life   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
   A minimal, portfolio, sidebar,
@@ -30,8 +30,8 @@ url: 'https://kcsie.github.io/'
 github:
   username: KCSIE             # change to your github username
 
-twitter:
-  username:             # change to your twitter username
+#twitter:
+# username:             # change to your twitter username
 
 social:
   # Change to your full name.
@@ -71,7 +71,7 @@ google_analytics:
 #     light  - Use the light color scheme
 #     dark   - Use the dark color scheme
 #
-theme_mode: light   # [light|dark]
+theme_mode:  # [light|dark]
 
 # The CDN endpoint for images.
 # Notice that once it is assigned, the CDN url
@@ -81,7 +81,7 @@ theme_mode: light   # [light|dark]
 img_cdn: ''
 
 # the avatar on sidebar, support local or CORS resources
-avatar: https://cdn.jsdelivr.net/gh/cotes2020/chirpy-images/commons/avatar.jpg
+avatar: https://s1.ax1x.com/2020/06/18/NmXhO1.jpg
 
 # boolean type, the global switch for ToC in posts.
 toc: true
