@@ -30,8 +30,8 @@ url: 'https://kcsie.github.io/'
 github:
   username: KCSIE             # change to your github username
 
-#twitter:
-# username:             # change to your twitter username
+twitter:
+ username:             # change to your twitter username
 
 social:
   # Change to your full name.
