@@ -2,8 +2,8 @@
 title: Enable Google Page Views
 author: Dinesh Prasanth Moluguwan Krishnamoorthy
 date: 2021-01-03 18:32:00 -0500
-categories: [Blogging, Tutorial]
-tags: [google analytics, pageviews]
+categories: [Notes, Pycharm]
+tags: [Tools, Solutions]
 ---
 
 
@@ -105,6 +105,7 @@ There is a detailed [tutorial](https://developers.google.com/analytics/solutions
     [2] Create a new project
     Please enter numeric choice or text value (must exactly match list
     item): 1
+    ```
 
 
     [root@bc96abf71ef8 /]# gcloud info
@@ -158,10 +159,11 @@ There is a detailed [tutorial](https://developers.google.com/analytics/solutions
     target service:  [default]
     target version:  [VESRION_NUM]
     target url:      [https://chirpy-test-XXXX.ue.r.appspot.com]
+    ```
 
 
     Do you want to continue (Y/n)? Y
-
+    
     Beginning deployment of service [default]...
     ╔════════════════════════════════════════════════════════════╗
     ╠═ Uploading 1 file to Google Cloud Storage                 ═╣
@@ -170,10 +172,10 @@ There is a detailed [tutorial](https://developers.google.com/analytics/solutions
     Updating service [default]...done.
     Setting traffic split for service [default]...done.
     Deployed service [default] to [https://chirpy-test-XXXX.ue.r.appspot.com]
-
+    
     You can stream logs from the command line by running:
     $ gcloud app logs tail -s default
-
+    
     To view your application in the web browser run:
     $ gcloud app browse
     ```
