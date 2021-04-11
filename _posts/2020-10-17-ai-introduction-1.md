@@ -11,7 +11,7 @@ tags: [AI, ML, DL, Intro]
 
 + **Intelligence** might be defined as the ability to learn and perform suitable techniques to solve problems and achieve goals, appropriate to the context in an uncertain, ever-varying world. A fully pre-programmed factory robot is flexible, accurate, and consistent but not intelligent.
 + **Artificial Intelligence (AI)**, a term coined by emeritus Stanford Professor John McCarthy in 1955, was defined by him as “the science and engineering of making intelligent machines”. Much research has humans program machines to behave in a clever way, like playing chess, but, today, we emphasize machines that can learn, at least somewhat like human beings do.
-+ ![1](https://s1.ax1x.com/2020/10/05/0Ygijg.jpg)
++ 
 
 #### Related Concepts
 
