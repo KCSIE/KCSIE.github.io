@@ -49,9 +49,9 @@ tags: MySQL Pycharm Database Tools
 
 ![2](https://s1.ax1x.com/2020/10/05/0Yfqw4.jpg)
 
-## 准备工作
+# 准备工作
 
-#### 进入
+## 进入
 
 + 找到MySQL的下载路径 (bin文件夹下)
 
@@ -67,7 +67,7 @@ tags: MySQL Pycharm Database Tools
 
 ![3](https://s1.ax1x.com/2020/10/05/0Ygijg.jpg)
 
-#### 创建新账户
+## 创建新账户
 
 + 输入
 
@@ -95,15 +95,15 @@ tags: MySQL Pycharm Database Tools
 
 ![4](https://s1.ax1x.com/2020/10/05/0Yfqw4.jpg)
 
-## Connection
+# Connection
 
-#### Step1
+## Step1
 
 Click the Database button on the right-hand side. Then click the Plus button to find the MySQL option in Data Source.
 
 ![5](https://s1.ax1x.com/2020/10/05/0Y4TZF.jpg)
 
-#### Step2
+## Step2
 
 You will find this window.
 
@@ -129,7 +129,7 @@ which means you will create a database called warehouse.
 
 After that, let's get back to Pycharm but don't exit MySQL because maybe you will use it later.
 
-#### Step3
+## Step3
 
 Fill in the blanks in Pycharm.
 
@@ -143,7 +143,7 @@ If you see a green tick, congrats! Click OK, done!
 
 If not, don't worry, let's go on.
 
-#### Step4
+## Step4
 
 The problem I met is 
 
@@ -181,15 +181,15 @@ Finally, return to Pycharm and click the Test Connection button again.
 
 Likewise, if you see a green tick, then you succeed!
 
-## 连接
+# 连接
 
-#### 第1步
+## 第1步
 
 点击右侧的Database按钮。然后点击加号按钮并在Data Source中寻找MySQL选项
 
 ![11](https://s1.ax1x.com/2020/10/05/0Y4TZF.jpg)
 
-#### 第2步
+## 第2步
 
 你会看到这个窗口。
 
@@ -215,7 +215,7 @@ CREATE DATABASE warehouse;
 
 随后我们回到Pycharm，但别退出MySQL因为我们后面可能会用到它
 
-#### 第3步
+## 第3步
 
 填写Pycharm窗口里的空。
 
@@ -229,7 +229,7 @@ CREATE DATABASE warehouse;
 
 如果没有，别担心，我们继续。
 
-#### 第4步
+## 第4步
 
 我遇到了这个问题
 

@@ -2,15 +2,15 @@
 title: Brief Introduction to AI
 tags: AI ML DL Notes
 ---
-## Basic Concepts
+# Basic Concepts
 
-#### What's Artificial Intelligence
+### What's Artificial Intelligence
 
 + **Intelligence** might be defined as the ability to learn and perform suitable techniques to solve problems and achieve goals, appropriate to the context in an uncertain, ever-varying world. A fully pre-programmed factory robot is flexible, accurate, and consistent but not intelligent.
 
 + **Artificial Intelligence (AI)**, a term coined by emeritus Stanford Professor John McCarthy in 1955, was defined by him as “the science and engineering of making intelligent machines”. Much research has humans program machines to behave in a clever way, like playing chess, but, today, we emphasize machines that can learn, at least somewhat like human beings do.
 
-#### Related Concepts
+### Related Concepts
 
 + **Autonomous systems** can independently plan and decide sequences of steps to achieve a specified goal without micro-management. A hospital delivery robot must autonomously navigate busy corridors to succeed in its task. In AI, autonomy doesn’t have the sense of being self-governing common in politics or biology.
 + **Machine Learning (ML)** is the part of AI studying how computer agents can improve their perception, knowledge, thinking, or actions based on experience or data. For this, ML draws from computer science, statistics, psychology, neuroscience, economics and control theory.
@@ -18,9 +18,9 @@ tags: AI ML DL Notes
 
 ![](https://s1.ax1x.com/2020/11/01/BwKPJK.png)
 
-## 基本概念
+# 基本概念
 
-#### 什么是人工智能？
+## 什么是人工智能？
 
 + **智能**可以定义为学习和执行恰当的技术以解决问题、实现目标的能力，且这些能力能够适用于不确定、不断变化的外部环境。经过完全预编程的工业机器人具有灵活性、准确性和一致性，但并不智能。
 + **人工智能（AI）**由斯坦福大学名誉教授 John McCarthy 在 1955 年提出，他将人工智能定义为「制造智能机器的科学与工程」。许多研究使人类编程的机器能够以聪明的方式执行任务，如下棋。但是如今，AI 领域致力于实现至少可以像人类一样学习的机器。
