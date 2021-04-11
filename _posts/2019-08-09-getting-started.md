@@ -15,7 +15,10 @@ Follow the [Jekyll Docs](https://jekyllrb.com/docs/installation/) to complete th
 There are two ways to get the theme:
 
 - **Install from RubyGems** - Easy to update, isolate irrelevant project files so you can focus on writing.
+
 - **Fork on GitHub** - Convenient for custom development, but difficult to update, only suitable for web developers.
+
+  ![](https://s1.ax1x.com/2020/11/01/BwKnot.jpg)
 
 ### Installing the Theme Gem
 
