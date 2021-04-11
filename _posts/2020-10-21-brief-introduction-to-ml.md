@@ -3,7 +3,7 @@ title: Brief Introduction to ML
 tags: AI ML DL Notes
 ---
 
-## Learning Map
+# Learning Map
 
 Machine learning falls into four main categories:
 
@@ -20,7 +20,7 @@ Here's the map:
 
 <img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/11/04/BgQLUf.png" alt="" />
 
-## 学习导图
+# 学习导图
 
 机器学习可以分为四类：
 
@@ -37,7 +37,7 @@ Here's the map:
 
 <img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/11/04/BgQLUf.png" alt="" />
 
-## Machine Learning Process
+# Machine Learning Process
 
 Terminologies：
 
@@ -65,7 +65,7 @@ Steps:
 6. Parameter adjustment
 7. Forecasting (start of use)
 
-## 机器学习流程
+# 机器学习流程
 
 术语：
 
@@ -93,7 +93,7 @@ Steps:
 6. 参数调整
 7. 预测（开始使用）
 
-## Classical Learning
+# Classical Learning
 
 Classical machine learning is often divided into two categories: supervised learning and unsupervised learning(In fact, there's semi-supervised learning between them):
 
@@ -101,7 +101,7 @@ Classical machine learning is often divided into two categories: supervised lear
 
 
 
-#### Supervised Learning
+## Supervised Learning
 
 The computer is presented with example inputs and their desired outputs, given by a “teacher”, and the goal is to learn a general rule that maps inputs to outputs. The training process continues until the model achieves the desired level of accuracy on the training data.
 
@@ -119,7 +119,7 @@ Here's some supervised learning methods:
 
 <img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/11/04/Bgaapq.png" alt="" />
 
-#### Unsupervised learning
+## Unsupervised learning
 
 No labels are given to the learning algorithm, leaving it on its own to find structure in its input. It is used for clustering population in different groups. Unsupervised learning can be a goal in itself (discovering hidden patterns in data).
 
@@ -133,11 +133,11 @@ Here's some unsupervised learning methods:
   + Latent Semantic Analysis(LSA)
 + Representation Learning
 
-#### Semi-supervised learning
+## Semi-supervised learning
 
 Problems where you have a large amount of input data and only some of the data is labeled, are called semi-supervised learning problems. These problems sit in between both supervised and unsupervised learning.
 
-#### Difference Between Supervised Learning & Unsupervised learning
+## Difference Between Supervised Learning & Unsupervised learning
 
 | Supervised Learning      | Unsupervised learning          |
 | ------------------------ | ------------------------------ |
@@ -149,7 +149,7 @@ Problems where you have a large amount of input data and only some of the data i
 
 <img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/11/04/BgdB8I.png" alt="" />
 
-## 经典学习
+# 经典学习
 
 经典的机器学习方法常被分为两类：监督学习和无监督学习(事实上，这两个间还有半监督学习):
 
@@ -157,7 +157,7 @@ Problems where you have a large amount of input data and only some of the data i
 
 
 
-#### 监督学习
+## 监督学习
 
 计算机会收到一个 "老师 "给出的输入示例及其期望的输出，目标是学习一个将输入映射到输出的一般规则。训练过程继续进行，直到模型在训练数据上达到预期的准确度。
 
@@ -175,7 +175,7 @@ Problems where you have a large amount of input data and only some of the data i
 
 <img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/11/04/Bgaapq.png" alt="" />
 
-#### 无监督学习
+## 无监督学习
 
 不给学习算法任何标签，让它自己去寻找输入中的结构。它用于在不同的群体中对人群进行聚类。无监督学习本身就可以成为一个目标（发现数据中的隐藏模式）。
 
@@ -189,11 +189,11 @@ Problems where you have a large amount of input data and only some of the data i
   + 隐形语义3分析(LSA)
 + 表征学习
 
-#### 半监督学习
+## 半监督学习
 
 如果你有大量的输入数据，但只有部分数据被标记，这些问题被称为半监督学习问题。这些问题介于监督学习和无监督学习之间。
 
-#### 监督学习与无监督学习的区别
+## 监督学习与无监督学习的区别
 
 | 监督学习           | 无监督学习           |
 | ------------------ | -------------------- |
@@ -205,7 +205,7 @@ Problems where you have a large amount of input data and only some of the data i
 
 <img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/11/04/BgdB8I.png" alt="" />
 
-## Reinforcement Learning
+# Reinforcement Learning
 
 A computer program interacts with a dynamic environment in which it must perform a certain goal (such as driving a vehicle or playing a game against an opponent). The program is provided feedback in terms of rewards and punishments as it navigates its problem space.
 
@@ -215,7 +215,7 @@ A computer program interacts with a dynamic environment in which it must perform
 
 <img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/11/04/BgBSHO.png" alt="" />
 
-## 增强学习
+# 增强学习
 
 一个计算机程序与一个动态环境互动，在这个环境中，它必须完成某个目标（如驾驶车辆或与对手玩游戏）。当程序在其问题空间中导航时，它将得到奖惩方面的反馈。
 
@@ -226,7 +226,7 @@ A computer program interacts with a dynamic environment in which it must perform
 
 <img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/11/04/BgB8vq.jpg" alt="" />
 
-## Ensemble Methods
+# Ensemble Methods
 
 The ensemble methods refers to combining multiple models in order to get better results and to make the integrated models more generalizable. For multiple models, there are several different thoughts on how to combine these models:
 
@@ -248,7 +248,7 @@ Here's the three methods:
 
   <img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/11/04/Bgchi8.png" alt="" />
 
-## 集成方法
+# 集成方法
 
 集成学习方法是指组合多个模型，以获得更好的效果，使集成的模型具有更强的泛化能力。对于多个模型，如何组合这些模型，主要有以下几种不同的思路：
 
@@ -270,14 +270,6 @@ Here's the three methods:
 + Boosting
 
   <img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/11/04/Bgchi8.png" alt="" />
-
-## Neural Nets & Deep Learning
-
-Neural networks and deep learning will be presented in a later article.
-
-## 神经网络与深度学习
-
-神经网络与深度学习将在后面的文章中详细介绍。
 
 
 

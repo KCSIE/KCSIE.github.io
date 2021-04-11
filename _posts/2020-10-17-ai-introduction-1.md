@@ -4,13 +4,13 @@ tags: AI ML DL Notes
 ---
 # Basic Concepts
 
-### What's Artificial Intelligence
+## What's Artificial Intelligence
 
 + **Intelligence** might be defined as the ability to learn and perform suitable techniques to solve problems and achieve goals, appropriate to the context in an uncertain, ever-varying world. A fully pre-programmed factory robot is flexible, accurate, and consistent but not intelligent.
 
 + **Artificial Intelligence (AI)**, a term coined by emeritus Stanford Professor John McCarthy in 1955, was defined by him as “the science and engineering of making intelligent machines”. Much research has humans program machines to behave in a clever way, like playing chess, but, today, we emphasize machines that can learn, at least somewhat like human beings do.
 
-### Related Concepts
+## Related Concepts
 
 + **Autonomous systems** can independently plan and decide sequences of steps to achieve a specified goal without micro-management. A hospital delivery robot must autonomously navigate busy corridors to succeed in its task. In AI, autonomy doesn’t have the sense of being self-governing common in politics or biology.
 + **Machine Learning (ML)** is the part of AI studying how computer agents can improve their perception, knowledge, thinking, or actions based on experience or data. For this, ML draws from computer science, statistics, psychology, neuroscience, economics and control theory.
@@ -25,7 +25,7 @@ tags: AI ML DL Notes
 + **智能**可以定义为学习和执行恰当的技术以解决问题、实现目标的能力，且这些能力能够适用于不确定、不断变化的外部环境。经过完全预编程的工业机器人具有灵活性、准确性和一致性，但并不智能。
 + **人工智能（AI）**由斯坦福大学名誉教授 John McCarthy 在 1955 年提出，他将人工智能定义为「制造智能机器的科学与工程」。许多研究使人类编程的机器能够以聪明的方式执行任务，如下棋。但是如今，AI 领域致力于实现至少可以像人类一样学习的机器。
 
-#### 相关概念
+## 相关概念
 
 + **自主系统**能够独立地计划和确定操作步骤，以实现指定的目标，而无需进行微观管理。医院中的配送机器人必须在人来人往的走廊中自主导航才能成功完成任务。在人工智能领域中，「自主」并不意味着政治或生物学中常见的 “自治”。
 + **机器学习（ML）**是人工智能的一部分，旨在研究计算机智能体如何根据经验或数据改善其感知、知识、思维或行动。为此，机器学习领域的知识涉及计算机科学、统计学、心理学、神经科学、经济学和控制论。
@@ -33,16 +33,16 @@ tags: AI ML DL Notes
 
 ![](https://s1.ax1x.com/2020/11/01/BwKry4.jpg)
 
-## Machine Learning
+# Machine Learning
 
-#### What‘s Machine Learning?
+## What‘s Machine Learning?
 
 + Machine learning is a field of computer science that gives computers the ability to learn without being explicitly programmed.
 + A machine learning algorithm is an algorithm that is able to learn from data.
 + The development of machine learning algorithms is one of the most important branches of AI.
 + A widely quoted and formal definition is “ **A** computer program is said to learn from experience **E** with respect to some task **T** *and some performance measure* **P**, if its performance on **T**, as measured by **P**, improves with experience **E** ” 
 
-#### Different ML methods
+## Different ML methods
 
 + Supervised learning
 + Unsupervised learning
@@ -50,23 +50,23 @@ tags: AI ML DL Notes
 
 ![](https://s1.ax1x.com/2020/11/01/Bw13hq.png)
 
-#### How machine learning works?
+## How machine learning works?
 
 1. Select and prepare a training data set
 2. Choose an algorithm to run on the training data
 3. Training the algorithm to create the model
 4. Using and improving the model 
 
-## 机器学习
+# 机器学习
 
-#### 什么是机器学习?
+## 什么是机器学习?
 
 + 机器学习是计算机科学的一个领域，它使计算机具有学习的能力，而不需要明确的编程。
 + 机器学习算法是一种能够从数据中学习的算法。
 + 机器学习算法的开发是人工智能最重要的分支之一。
 + 一个被广泛引用的正式定义是" 一个从经验中学习，对于一些任务进行性能评估的计算机程序，如果它在任务上的性能，表现如性能评估所测量的，它会随着经验的提高而提高" 。
 
-#### 不同的机器学习方法
+## 不同的机器学习方法
 
 + 监督学习
 + 无监督学习
@@ -74,7 +74,7 @@ tags: AI ML DL Notes
 
 ![](https://s1.ax1x.com/2020/11/01/Bw13hq.png)
 
-#### 机器学习如何工作?
+## 机器学习如何工作?
 
 1. 选择并准备训练数据集
 2. 选择一种算法在训练数据上运行。
@@ -83,15 +83,15 @@ tags: AI ML DL Notes
 
 ![](https://s1.ax1x.com/2020/11/01/Bwttjx.png)
 
-## Deep Learning
+# Deep Learning
 
-#### What’s Deep Learning?
+## What’s Deep Learning?
 
 + Deep learning is a subset of machine learning in which multi-layered neural networks—modeled to work like the human brain—'learn' from large amounts of data. Within each layer of the neural network, deep learning algorithms perform calculations and make predictions repeatedly, progressively 'learning' and gradually improving the accuracy of the outcome over time.
 + Deep learning models require large amounts of data that pass through multiple layers of calculations, applying weights and biases in each successive layer to continually adjust and improve the outcomes.
 + Deep learning models are typically unsupervised or semi-supervised. Reinforcement learning models can also be deep learning models. Certain types of deep learning models—including convolutional neural networks (CNN) and recurrent neural networks (RNN)—are driving progress in areas such as computer vision (CV), natural language processing (NLP), and self-driving cars. 
 
-#### How deep learning works
+## How deep learning works
 
 + Deep learning neural networks (called deep neural networks) are modeled on the way scientists believe the human brain works. They process and reprocess data, gradually refining the analysis and results to accurately recognize, classify, and describe objects within the data.
 + Deep neural networks consist of multiple layers of interconnected nodes, each of which uses a progressively more complex deep learning algorithm to extract and identify features and patterns in the data. They then calculate the likelihood or confidence that the object or information can be classified or identified in one or more ways.
@@ -101,19 +101,19 @@ tags: AI ML DL Notes
 
 ![](https://s1.ax1x.com/2020/11/01/Bwt55Q.jpg)
 
-#### Relation to ML
+## Relation to ML
 
 ![](https://s1.ax1x.com/2020/11/01/BwYx1I.jpg)
 
-## 深度学习
+# 深度学习
 
-#### 什么是深度学习?
+## 什么是深度学习?
 
 + 深度学习是机器学习的一个子集，是神经网络的升级，其中多层神经网络被建模为像人脑一样工作并从大量数据中"学习"。在神经网络的每一层中，深度学习算法反复进行计算和预测，逐步"学习"，并随着时间的推移逐步提高结果的准确性。
 + 深度学习模型需要大量的数据通过多层计算，在每一层连续应用权重和偏差，不断调整和改进结果。
 + 深度学习模型通常是无监督或半监督的。强化学习模型也可以是深度学习模型。某些类型的深度学习模型--包括卷积神经网络（CNN）和循环神经网络（RNN）正在推动计算机视觉（CV）、自然语言处理（NLP）和自动驾驶等领域的发展。
 
-#### 深度学习如何工作？
+## 深度学习如何工作？
 
 + 深度学习神经网络（称为深度神经网络）是以科学家认为的人类大脑工作方式为模型的。它们对数据进行处理和再处理，逐步完善分析和结果，以准确识别、分类和描述数据中的对象。
 + 深度神经网络由多层相互连接的节点组成，每个节点使用逐渐复杂的深度学习算法来提取和识别数据中的特征和模式。然后，它们计算对象或信息可以以一种或多种方式进行分类或识别的可能性或置信度。
@@ -123,11 +123,11 @@ tags: AI ML DL Notes
 
 ![](https://s1.ax1x.com/2020/11/01/Bwt9nf.jpg)
 
-#### 和机器学习的关系
+## 和机器学习的关系
 
 ![](https://s1.ax1x.com/2020/11/01/BwtCB8.jpg)
 
-## Tribes of AI
+# Tribes of AI
 
 ![](https://s1.ax1x.com/2020/11/01/BwKnot.jpg)
 
@@ -148,7 +148,7 @@ tags: AI ML DL Notes
 + **Information Integration Theorists** - Argue that consciou-ness emerges from some internal imagination of machines that mirrors the causality of reality. The motivation of this group is that if we are ever to understand consciousness then we have to at least start thinking about it! I, however, can’t see the relationship of learning and consciousness in their approach. It is possible that they aren’t related at all! That’s maybe why we need sleep.
 + **PAC Theorists** - Are folks that don’t really want to discuss Artificial Intelligence, rather prefer just studying intelligence because at least they know it exists! Their whole idea is that adaptive systems perform computation expediently such that they are all probably approximately correct. In short, intelligence does not have the luxury of massive computation.
 
-## AI 流派
+# AI 流派
 
 ![](https://s1.ax1x.com/2020/11/01/BwKnot.jpg)
 
