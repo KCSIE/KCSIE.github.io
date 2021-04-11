@@ -26,10 +26,10 @@ titles:
 key: page-about
 ---
 
-# Hi There
+# Hi There!
 
 
 
-![](https://s1.ax1x.com/2020/06/18/NmXhO1.jpg)
+<div align=center>![](https://s1.ax1x.com/2020/06/18/NmXhO1.jpg)
 
 Hello! I'm KCSIE. Welcome to my blog.
