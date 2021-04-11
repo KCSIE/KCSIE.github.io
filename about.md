@@ -1,6 +1,6 @@
 ---
 layout: article
-titles:
+titles: About
   # @start locale config
   en      : &EN       About
   en-GB   : *EN
@@ -28,8 +28,9 @@ key: page-about
 
 # Hi There!
 
+<img align="center" src="https://s1.ax1x.com/2020/06/18/NmXhO1.jpg"/>
 
 
-<div align=center>![](https://s1.ax1x.com/2020/06/18/NmXhO1.jpg)
 
 Hello! I'm KCSIE. Welcome to my blog.
+
