@@ -1,6 +1,6 @@
 ---
 title: Brief Introduction to AI
-tags: AI, ML, DL, Notes
+tags: AI ML DL Notes
 ---
 ## Basic Concepts
 

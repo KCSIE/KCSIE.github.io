@@ -1,6 +1,6 @@
 ---
 title: Brief Introduction to ML
-tags: AI, ML, DL, Notes
+tags: AI ML DL Notes
 ---
 
 ## Learning Map

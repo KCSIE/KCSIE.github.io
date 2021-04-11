@@ -1,6 +1,6 @@
 ---
 title:  How to Setup a MySQL Database Connection in Pycharm
-tags: MySQL, Pycharm, Database, Tools
+tags: MySQL Pycharm Database Tools
 ---
 
 ## Preparation
