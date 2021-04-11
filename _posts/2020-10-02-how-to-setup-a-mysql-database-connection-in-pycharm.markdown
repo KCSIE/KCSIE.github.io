@@ -3,9 +3,9 @@ title:  How to Setup a MySQL Database Connection in Pycharm
 tags: MySQL Pycharm Database Tools
 ---
 
-## Preparation
+# Preparation
 
-#### Enter
+## Enter
 
 + Find the download path of MySQL (under the bin folder)
 
@@ -21,7 +21,7 @@ tags: MySQL Pycharm Database Tools
 
 ![1](https://s1.ax1x.com/2020/10/05/0Ygijg.jpg)
 
-#### Create a new account
+## Create a new account
 
 + Enter 
 

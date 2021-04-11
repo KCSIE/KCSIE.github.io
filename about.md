@@ -1,6 +1,6 @@
 ---
 layout: article
-titles: About
+titles: 
   # @start locale config
   en      : &EN       About
   en-GB   : *EN
@@ -26,9 +26,11 @@ titles: About
 key: page-about
 ---
 
-# Hi There!
+## Hi There
 
-<img align="center" src="https://s1.ax1x.com/2020/06/18/NmXhO1.jpg"/>
+
+
+![](https://s1.ax1x.com/2020/06/18/NmXhO1.jpg)
 
 
 
