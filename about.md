@@ -26,8 +26,6 @@ titles:
 key: page-about
 ---
 
-
-
 # Hi There
 
 
