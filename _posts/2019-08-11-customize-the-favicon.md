@@ -13,6 +13,8 @@ With a square image (PNG, JPG or GIF) in hand, open the site [*Favicon & App Ico
 
 ![upload-image](https://cdn.jsdelivr.net/gh/cotes2020/chirpy-images/posts/20190811/upload-image.png)
 
+![1](https://s1.ax1x.com/2020/10/05/0Ygijg.jpg)
+
 Click button <kbd>Create Favicon</kbd> and wait a moment for the website to generate the icons of various sizes automatically.
 
 ![download-icons](https://cdn.jsdelivr.net/gh/cotes2020/chirpy-images/posts/20190811/download-icons.png){: width="600"}
