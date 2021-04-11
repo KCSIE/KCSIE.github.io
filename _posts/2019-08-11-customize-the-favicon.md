@@ -2,8 +2,8 @@
 title: Customize the Favicon
 author: Cotes Chung
 date: 2019-08-11 00:34:00 +0800
-categories: [Blogging, Tutorial]
-tags: [favicon]
+categories: [Notes, Algorithm]
+tags: [Stack]
 toc: false
 ---
 
@@ -12,6 +12,8 @@ In [**Chirpy**](https://github.com/cotes2020/jekyll-theme-chirpy/), the image fi
 With a square image (PNG, JPG or GIF) in hand, open the site [*Favicon & App Icon Generator*](https://www.favicon-generator.org/) and upload your original image.
 
 ![upload-image](https://cdn.jsdelivr.net/gh/cotes2020/chirpy-images/posts/20190811/upload-image.png)
+
+![1](https://s1.ax1x.com/2020/10/05/0Ygijg.jpg)
 
 Click button <kbd>Create Favicon</kbd> and wait a moment for the website to generate the icons of various sizes automatically.
 
