@@ -6,25 +6,23 @@ title: Links
 <table>
     <thead>
         <tr>
-            <th>Cover</th>
             <th>Name</th>
-            <th>Start</th>
-            <th>Finish</th>
-            <th>Note</th>
+            <th>Icon</th>
+            <th>Description</th>
+            <th>Blogroll</th>
         </tr>
     </thead>
     <tbody>
-        {% for book in site.data.links %}
-            {%- if book.finish_date -%}
+        {% for link in site.data.links %}
+            {%- if link.finish_date -%}
             <tr bgcolor=#D8F781>
             {%- else -%}
             <tr>
             {%- endif -%}
-                <td><a href="{{ book.douban_link }}"><img src="{{ book.cover }}" class="img-rounder" width="60" height="80" alt="{{ book.name }}"/></td>
-                <td>{{ book.name }}</td>
-                <td>{{ book.start_date }}</td>
-                <td>{{ book.finish_date }}</td>
-                <td>{{ book.note }}</td>
+                <td>{{ link.name }}</td>
+                <td><img src="{{ link.icon }}" class="img-rounder" width="60" height="80"/></td>
+                <td>{{ link.description }}</td>
+                <td><a href="{{ link.blogroll }}"></td>
             </tr>
         {% endfor %}
     </tbody>
