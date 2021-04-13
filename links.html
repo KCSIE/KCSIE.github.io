@@ -3,7 +3,7 @@ layout: article
 title: Links
 ---
 
-<!--
+<!-- 列表
 <table>
     <thead>
         <tr>
@@ -39,7 +39,8 @@ title: Links
 <head>
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/mdui@1.0.1/dist/css/mdui.min.css"/>
 </head>
-<div class="mdui-container">
+<body class="mdui-color-grey-400">
+  <div class="mdui-container">
     <div class="mdui-row-sm-2 mdui-row-md-4">
         {% for link in site.data.links %}
         <div class="mdui-col">
@@ -56,4 +57,6 @@ title: Links
         </div>
         {% endfor %}
     </div>
-</div>
+  </div>
+</body>
+
