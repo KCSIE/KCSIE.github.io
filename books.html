@@ -36,7 +36,7 @@ titles: 友情链接
         </tr>
     </thead>
     <tbody>
-        {% for book in site.other.books %}
+        {% for book in site.data.books %}
             {%- if book.finish_date -%}
             <tr bgcolor=#D8F781>
             {%- else -%}

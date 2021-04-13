@@ -51,7 +51,7 @@ header:
     
   - titles:
       # @start locale config
-      en      : &EN       Other
+      en      : &EN       Book
       en-GB   : *EN
       en-US   : *EN
       en-CA   : *EN
@@ -72,4 +72,4 @@ header:
       fr-FR   : *FR
       fr-LU   : *FR
       # @end locale config
-    url: /other.html
+    url: /books.html
