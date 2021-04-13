@@ -36,17 +36,17 @@ titles: 友情链接
         </tr>
     </thead>
     <tbody>
-        {% for book in site.data.books %}
-            {%- if book.finish_date -%}
+        {% for book in site.other.books %}
+            {%- if other.finish_date -%}
             <tr bgcolor=#D8F781>
             {%- else -%}
             <tr>
             {%- endif -%}
                 <td><a href="{{ book.douban_link }}"><img src="{{ book.cover }}" class="img-rounder" width="60" height="80" alt="{{ book.name }}"/></td>
-                <td>{{ book.name }}</td>
-                <td>{{ book.start_date }}</td>
-                <td>{{ book.finish_date }}</td>
-                <td>{{ book.note }}</td>
+                <td>{{ other.name }}</td>
+                <td>{{ other.start_date }}</td>
+                <td>{{ other.finish_date }}</td>
+                <td>{{ other.note }}</td>
             </tr>
         {% endfor %}
     </tbody>
