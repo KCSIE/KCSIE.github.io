@@ -1,11 +1,11 @@
 - name: FYC's Blog
   icon: https://s1.ax1x.com/2020/09/08/wlBaAU.jpg
-  description: fyc yyds
-  blogroll: https://pickinstars.com/
-
-- name: 人类简史
-  icon: https://img9.doubanio.com/lpic/s29802866.jpg
   description: 
-  blogroll: 
+  url: https://pickinstars.com/
+
+- name: LYX's Blog
+  icon: https://z3.ax1x.com/2021/04/13/cydiMF.jpg
+  description: stevenL
+  url: https://steven900516.gitee.io/
 
 

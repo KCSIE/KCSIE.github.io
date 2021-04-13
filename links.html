@@ -9,7 +9,7 @@ title: Links
             <th>Name</th>
             <th>Icon</th>
             <th>Description</th>
-            <th>Blogroll</th>
+            <th>Url</th>
         </tr>
     </thead>
     <tbody>
@@ -22,7 +22,7 @@ title: Links
                 <td>{{ link.name }}</td>
                 <td><img src="{{ link.icon }}" class="img-rounder" width="100" height="100"/></td>
                 <td>{{ link.description }}</td>
-                <td><a href="{{ link.blogroll }}">{{ link.blogroll}}</a></td>
+                <td><a href="{{ link.url }}">{{ link.url}}</a></td>
             </tr>
         {% endfor %}
     </tbody>
