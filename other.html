@@ -43,10 +43,10 @@ titles: 友情链接
             <tr>
             {%- endif -%}
                 <td><a href="{{ book.douban_link }}"><img src="{{ book.cover }}" class="img-rounder" width="60" height="80" alt="{{ book.name }}"/></td>
-                <td>{{ other.name }}</td>
-                <td>{{ other.start_date }}</td>
-                <td>{{ other.finish_date }}</td>
-                <td>{{ other.note }}</td>
+                <td>{{ book.name }}</td>
+                <td>{{ book.start_date }}</td>
+                <td>{{ book.finish_date }}</td>
+                <td>{{ book.note }}</td>
             </tr>
         {% endfor %}
     </tbody>
