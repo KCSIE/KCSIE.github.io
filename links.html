@@ -3,6 +3,7 @@ layout: article
 title: Links
 ---
 
+<!--
 <table>
     <thead>
         <tr>
@@ -26,4 +27,23 @@ title: Links
             </tr>
         {% endfor %}
     </tbody>
-</table>
+</table> -->
+
+<div class="mdui-container">
+    <div class="mdui-row-sm-2 mdui-row-md-4">
+        {% for link in site.data.links %}
+        <div class="mdui-col">
+            <a class="linkurl" href="{{link.url}}" target="_blank">
+            <div class="mdui-card mdui-hoverable">
+                <div class="mdui-card-header">
+                    <img class="mdui-card-header-avatar" src="{{link.icon}}" />
+                    <div class="mdui-card-header-title">{{link.name}}</div>
+                    <div class="mdui-card-header-subtitle">{{link.description}}</div>
+                </div>
+            </div>
+            </a>
+            <br>
+        </div>
+        {% endfor %}
+    </div>
+</div>
