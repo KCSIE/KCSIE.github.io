@@ -1,11 +1,11 @@
 ---
-title: The von Neumann architecture 
+title: The Von Neumann architecture 
 tags: CPU I/O Memory ComputerOrganization&Architecture
 ---
 
 <img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/09/11/wtHYbd.png" alt="" />
 
-## Overview
+# Overview
 The von Neumann architecture—also known as the von 
 Neumann model or Princeton architecture—is a computer 
 architecture based on a 1945 description by Hungarian-American 
@@ -42,7 +42,7 @@ Also, in addition to the processor and controller, the CPU has the following par
 
 <img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/09/11/wt7Xjg.png" alt="" />
 
-## 概述
+# 概述
 冯-诺依曼体系结构--又称冯-诺依曼模型或普林斯顿体系结构，
 是根据1945年美籍匈牙利数学家、物理学家约翰-冯-诺依曼等人在《EDVAC报告第一稿》
 中的描述而提出的一种计算机体系结构，描述了一种电子计算机的设计体系结构，
@@ -76,7 +76,7 @@ Also, in addition to the processor and controller, the CPU has the following par
 
 <img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/09/11/wNzDcn.png" alt="" />
 
-## Trait
+# Feature
 + All data and instructions processed by the cpu are expressed in binary
 + Instructions and data are indiscriminately mixed and stored in the same memory （All can be found by address）
 + Sequentially execute each instruction of the program （Instructions are pre-entered 
@@ -89,7 +89,7 @@ the program until the end of the program）
 according to the results of calculations or the preset 
 conditions
 
-## 特点
+# 特点
 + CPU处理的数据和指令一律用二进制表示
 + 指令和数据不加区别混合存储在同一个存储器
 + 顺序执行程序的每一条指令
@@ -97,14 +97,14 @@ conditions
 
 <img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/09/11/wUA9kq.png" alt="" />
 
-## Function
+# Function
 + Sending the required programs and data to the computer (Copy)
 + Must have the ability to remember programs, data, intermediate results and final calculations for a long period of time(Hard disk)
 + Be able to perform various arithmetic and logical operations and data processing such as data transfer (ALU)
 + Ability to control the direction of the program as required and to control the coordinated operation of the various components of the computer as directed
 + Be able to output the results of processing to the user as required
 
-## 功能
+# 功能
 + 将需要的程序和数据传输送至计算机中（复制）
 + 必须具备长期记忆程序、数据、中间结果及最终运算结果的能力（硬盘）
 + 具有能够完成各种算术、逻辑运算和数据传送等数据加工处理的能力（ALU）
@@ -113,7 +113,7 @@ conditions
 
 <img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/09/13/wwXde0.jpg" alt="" />
 
-## Execution
+# Execution
 + Instruction cycle  
    + The process of executing a program is actually a continuous process of fetching instructions, analyzing them, and executing them. Von Neumann type computers essentially work with a serial sequential processing mechanism, and must execute instruction sequences one by one even when the data in question is ready
    + The instruction cycle (also known as the fetch–decode–execute cycle, or simply the fetch-execute cycle) is the cycle that the central processing unit (CPU) follows from boot-up until the computer has shut down in order to process instructions. It is composed of three main stages: the fetch stage, the decode stage, and the execute stage
@@ -129,7 +129,7 @@ conditions
 
 <img style="display: block; margin: 0 auto;" src="https://s1.ax1x.com/2020/09/13/wwBTxI.png" alt="" />
 
-## 执行
+# 执行
 + 指令周期
    + 程序的执行过程实际上是不断地取出指令、分析指令、执行指令的过程。冯·诺依曼型计算机从本质上讲是采用串行顺序处理的工作机制，即使有关数据已经准备好了，也必须逐条执行指令序列
    + 指令周期(又称读取-解码-执行周期，或简称读取-执行周期)是指中央处理单元(CPU)从开机到计算机关机为止，为了处理指令而遵循的周期。它由三个主要阶段组成：获取阶段、解码阶段和执行阶段
