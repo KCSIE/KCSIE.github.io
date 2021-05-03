@@ -219,7 +219,7 @@ $$
 
 MAPE (Mean Absolute Percentage Error) is called Mean Absolute Percentage Error. MAPE of 0% indicates a perfect model, while MAPE greater than 100 % indicates a poor model.
 $$
-MAPE ={\frac{100%}m}*{{\sum_{i=1}^m}|{{ {{\hat{y}}_{test}^i}-{y_{test}^i}}\over{y_{test}^i}}| }
+MAPE =\frac{100%}m*\sum_{i=1}^m|{{ {{\hat{y}}_{test}^i}-{y_{test}^i}}\over{y_{test}^i}}|
 $$
 
 
