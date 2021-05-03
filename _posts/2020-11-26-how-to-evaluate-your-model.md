@@ -47,6 +47,8 @@ for train_idx, test_idx in digits_gen:
         y_test = digits.target[test_idx] #Test set label
 ```
 
+
+
 # 引入
 
 ## 背景
@@ -90,6 +92,8 @@ for train_idx, test_idx in digits_gen:
         y_train = digits.target[train_idx] #Training set label
         y_test = digits.target[test_idx] #Test set label
 ```
+
+
 
 # Model Evaluation Metrics
 
@@ -251,6 +255,7 @@ MAPE (Mean Absolute Percentage Error) is called Mean Absolute Percentage Error. 
 $$
 MAPE =\frac{100\%}m*\sum_{i=1}^m|\frac{\hat{y}_{test}^i-y_{test}^i}{y_{test}^i}|
 $$
+
 
 
 # 模型评估指标
