@@ -173,10 +173,8 @@ tags: AI ML DL Notes
 
 **Reference/参考**: 
 
-https://hai.stanford.edu/sites/default/files/2020-09/AI-Definitions-HAI.pdf
-
-https://medium.com/intuitionmachine/the-many-tribes-problem-of-artificial-intelligence-ai-1300faba5b60
-
-https://www.ibm.com/cloud/learn
+[1]: https://hai.stanford.edu/sites/default/files/2020-09/AI-Definitions-HAI.pdf
+[2]: https://medium.com/intuitionmachine/the-many-tribes-problem-of-artificial-intelligence-ai-1300faba5b60
 
 <img style="display: block; margin: 0 auto;" src="" alt="" />
+
