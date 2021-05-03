@@ -330,7 +330,7 @@ $$
 
 RMSE(Root Mean Squarde Error)叫做均方根误差，是在MSE的基础上做平方根衡量观测值与真实值之间的偏差，常用来作为机器学习模型预测结果衡量的标准。
 $$
-RMSE = \sqrt[]{{\frac1m}*{{\sum_{i=1}^m}({y_{test}^i}-{{\hat{y}}_{test}^i})^2}} = \sqrt[]{MSE_{test}}
+RMSE = \sqrt[]{\frac1m*\sum_{i=1}^m(y_{test}^i-{\hat{y}_{test}^i})^2} = \sqrt[]{MSE_{test}}
 $$
 
 ### MAE&MAPE
@@ -339,7 +339,7 @@ $$
 
 MAE(Mean Absolute Error)叫做平均绝对误差，是绝对误差的平均值。它可以更好地反映预测值误差的实际情况。
 $$
-MAE ={\frac1m}*{{\sum_{i=1}^m}|{y_{test}^i}-{{\hat{y}}_{test}^i}|}
+MAE =\frac1m*\sum_{i=1}^m|y_{test}^i-{\hat{y}}_{test}^i|
 $$
 
 
@@ -347,7 +347,7 @@ $$
 
 MAPE(Mean Absolute Percentage Error)叫做平均绝对百分比误差。MAPE 为0%表示完美模型，MAPE 大于 100 %则表示劣质模型。
 $$
-MAPE ={\frac{100%}m}*{{\sum_{i=1}^m}|{{ {{\hat{y}}_{test}^i}-{y_{test}^i}}\over{y_{test}^i}}| }
+MAPE =\frac{100%}m*\sum_{i=1}^m|{{ {{\hat{y}}_{test}^i}-{y_{test}^i}}\over{y_{test}^i}}|
 $$
 
 
