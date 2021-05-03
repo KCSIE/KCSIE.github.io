@@ -202,7 +202,7 @@ $$
 
 RMSE (Root Mean Squarde Error) is a square root measure of the deviation between the observed and true values based on MSE. It is often used as a measure of the prediction results of machine learning models.
 $$
-RMSE = \sqrt[]{{\frac{1}{m}}*{{\sum_{i=1}^m}({{y_{test}}^i}-{{{\hat{y}}_{test}}^i})^2}} = \sqrt[]{MSE_{test}}
+RMSE = \sqrt[]{{1 \over m}*{{\sum_{i=1}^m}({{y_{test}}^i}-{{{\hat{y}}_{test}}^i})^2}} = \sqrt[]{MSE_{test}}
 $$
 
 ### MAE&MAPE
