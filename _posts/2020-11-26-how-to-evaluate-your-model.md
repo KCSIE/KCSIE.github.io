@@ -159,12 +159,16 @@ F1 Score is the weighted average of precision and recall. In general, precision 
 $$
 F1 = 2*(Recall * Precision) / (Recall + Precision)
 $$
+
+
 F1 score can be generalized to a weighted average of different weights assigned to precision and recall.
 
 
 $$
 F_a = [(1+a^2)*(Recall*Precision)]/[a^2*Precision+Recall]
 $$
+
+
 The magnitude of a indicates the relative importance of recall to precision.
 
 #### Notice
@@ -212,13 +216,17 @@ The area under the ROC curve is the AUC value, which can only be used for the ev
 #### MSE
 
 MSE (Mean Squared Error) is generally used to detect the deviation between the predicted and true values of a model. MSE is the square of the difference between the true and predicted values and then summed and averaged. The squared form is easy to derive, so it is often used as a loss function in linear regression.
+
+
 $$
-MSE={\frac1m}*{\sum_{i=1}^m({y_{test}^i}-{{\hat{y}}_{test}^i})^2}
+MSE={\frac1m}*\sum_{i=1}^m({y_{test}^i}-{{\hat{y}}_{test}^i})^2
 $$
 
 #### RMSE
 
 RMSE (Root Mean Squarde Error) is a square root measure of the deviation between the observed and true values based on MSE. It is often used as a measure of the prediction results of machine learning models.
+
+
 $$
 RMSE = \sqrt[]{\frac1m*\sum_{i=1}^m(y_{test}^i-{\hat{y}_{test}^i})^2} = \sqrt[]{MSE_{test}}
 $$
@@ -228,6 +236,8 @@ $$
 #### MAE
 
 MAE (Mean Absolute Error) is the average of the absolute error. It can better reflect the actual situation of the prediction value error.
+
+
 $$
 MAE =\frac1m*\sum_{i=1}^m|y_{test}^i-{\hat{y}}_{test}^i|
 $$
@@ -236,8 +246,10 @@ $$
 #### MAPE
 
 MAPE (Mean Absolute Percentage Error) is called Mean Absolute Percentage Error. MAPE of 0% indicates a perfect model, while MAPE greater than 100 % indicates a poor model.
+
+
 $$
-MAPE =\frac{100%}m*\sum_{i=1}^m|{{ {{\hat{y}}_{test}^i}-{y_{test}^i}}\over{y_{test}^i}}|
+MAPE =\frac{100%}m*\sum_{i=1}^m|\frac{{\hat{y}}_{test}^i-y_{test}^i}{y_{test}^i}|
 $$
 
 
@@ -264,18 +276,28 @@ $$
 #### 准确率
 
 准确率是分类问题的一个常见评价指标，它是模型预测正确（包括预测为真正确和预测为假正确）的样本数量占总样本数量的比例。
+
+
 $$
 Accuracy = M_{correct} / M_{total}
 $$
+
+
 在二分类问题中，准确率可以由如下公式表示：
+
+
 $$
 Accuracy = (TP+TN) / (TP+TN+FP+FN)
 $$
+
+
 准确率是分类问题中的一个最简单也最直观的评估指标，但是准确率存在一些局限性。比如，在二分类中，当负样本占比 99 %时，如果模型把所有样本都预测为负样本也能获得 99% 的准确率。虽然准确率看起来很高，但是其实这个模型时没有用，因为它找不出一个正样本。当数据不平衡时，尽管准确率很高，它是没有意义的。
 
 #### 精确率
 
 精确率指模型预测为真，实际也为真的样本数量占模型预测所有为真的样本数量的比例。
+
+
 $$
 Precision = TP/(TP+FP)
 $$
@@ -283,6 +305,8 @@ $$
 #### 召回率 （灵敏度）
 
 召回率是指模型预测为真，实际也为真的样本数量占实际所有为真的样本数量的比例。
+
+
 $$
 Recall = TP/(TP+FN)
 $$
@@ -290,13 +314,21 @@ $$
 #### F1值
 
 F1值是精确度和召回率的调和平均值。一般来说，精确率和召回率是互斥的，也就是说精确率高的话，召回率会变低；召回率高的话，精确率会变低。所以设计了一个同时考虑精确率和召回率的指标 F1值。
+
+
 $$
 F1 = 2*(Recall * Precision) / (Recall + Precision)
 $$
+
+
 F1值可泛化为对精确率和召回率赋不同权值进行加权调和。
+
+
 $$
 F_a = [(1+a^2)*(Recall*Precision)]/[a^2*Precision+Recall]
 $$
+
+
 a的大小表示召回率对精确率的相对重要程度。
 
 #### 注意
@@ -314,6 +346,8 @@ a的大小表示召回率对精确率的相对重要程度。
 ROC，受试者工作特征曲线，以真阳性率为纵坐标，假阳性率为横坐标绘制的曲线，是反映灵敏性和特效性连续变量的综合指标。一般认为ROC越光滑说明分类算法过拟合的概率越低，ROC越远离对角线，越陡峭，越接近左上角说明分类性能越好。
 
 在众多的机器学习模型中，很多模型输出的是预测概率，而使用精确率、召回率这类指标进行模型评估时，还需要对预测概率设分类阈值，比如预测概率大于阈值为正例，反之为负例。这使得模型多了一个超参数，并且这超参数会影响模型的泛化能力。ROC曲线不需要设定这样的阈值，ROC曲线纵坐标是真正率，横坐标是假正率。
+
+
 $$
 [Sensitivity=Recall= Y-axis]True Positive Rate(TPR)= TP /(TP+FN)
 $$
@@ -321,6 +355,8 @@ $$
 $$
 [1-Specificity=X-axis]FalsePositiveRate(FPR)=FP/(FP+TN)
 $$
+
+
 
 当测试集中的正负样本的分布变化的时候，ROC曲线能够保持不变，无视样本不平衡。
 
@@ -340,13 +376,17 @@ ROC曲线下的面积即AUC值，只能用于二分类模型的评价。AUC是�
 #### MSE
 
 MSE(Mean Squared Error)叫做均方误差，一般用来检测模型的预测值和真实值之间的偏差。MSE是真实值与预测值的差值的平方然后求和平均。通过平方的形式便于求导，所以常被用作线性回归的损失函数。
+
+
 $$
-MSE={\frac1m}*{\sum_{i=1}^m({y_{test}^i}-{{\hat{y}}_{test}^i})^2}
+MSE={\frac1m}*\sum_{i=1}^m({y_{test}^i}-{{\hat{y}}_{test}^i})^2
 $$
 
 #### RMSE
 
 RMSE(Root Mean Squarde Error)叫做均方根误差，是在MSE的基础上做平方根衡量观测值与真实值之间的偏差，常用来作为机器学习模型预测结果衡量的标准。
+
+
 $$
 RMSE = \sqrt[]{\frac1m*\sum_{i=1}^m(y_{test}^i-{\hat{y}_{test}^i})^2} = \sqrt[]{MSE_{test}}
 $$
@@ -356,6 +396,8 @@ $$
 #### MAE
 
 MAE(Mean Absolute Error)叫做平均绝对误差，是绝对误差的平均值。它可以更好地反映预测值误差的实际情况。
+
+
 $$
 MAE =\frac1m*\sum_{i=1}^m|y_{test}^i-{\hat{y}}_{test}^i|
 $$
@@ -364,9 +406,12 @@ $$
 #### MAPE
 
 MAPE(Mean Absolute Percentage Error)叫做平均绝对百分比误差。MAPE 为0%表示完美模型，MAPE 大于 100 %则表示劣质模型。
+
+
 $$
-MAPE =\frac{100%}m*\sum_{i=1}^m|{{ {{\hat{y}}_{test}^i}-{y_{test}^i}}\over{y_{test}^i}}|
+MAPE =\frac{100%}m*\sum_{i=1}^m|\frac{{\hat{y}}_{test}^i-y_{test}^i}{y_{test}^i}|
 $$
+
 
 
 **Reference/参考**: 
