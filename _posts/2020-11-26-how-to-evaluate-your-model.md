@@ -219,7 +219,7 @@ MSE (Mean Squared Error) is generally used to detect the deviation between the p
 
 
 $$
-MSE=\frac1m*\sum_{i=1}^m({y_{test}^i}-{{\hat{y}}_{test}^i})^2
+MSE=\frac1m*\sum_{i=1}^m(y_{test}^i-{\hat{y}}_{test}^i)^2
 $$
 
 #### RMSE
@@ -379,7 +379,7 @@ MSE(Mean Squared Error)叫做均方误差，一般用来检测模型的预测值
 
 
 $$
-MSE=\frac1m*\sum_{i=1}^m({y_{test}^i}-{{\hat{y}}_{test}^i})^2
+MSE=\frac1m*\sum_{i=1}^m(y_{test}^i-{\hat{y}}_{test}^i)^2
 $$
 
 #### RMSE
