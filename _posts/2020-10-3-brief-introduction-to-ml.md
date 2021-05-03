@@ -275,7 +275,8 @@ Here's the three methods:
 
 **Reference/参考：**
 
-[1]: https://vas3k.com/blog/machine_learning/
-[2]: https://www.geeksforgeeks.org/
+https://vas3k.com/blog/machine_learning/
+
+https://www.geeksforgeeks.org/
 
 <img style="display: block; margin: 0 auto;" src="" alt="" />

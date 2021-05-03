@@ -47,8 +47,6 @@ for train_idx, test_idx in digits_gen:
         y_test = digits.target[test_idx] #Test set label
 ```
 
-
-
 # 引入
 
 ## 背景
@@ -118,18 +116,28 @@ The confusion matrix is an N X N matrix, where N is the number of classification
 #### Accuracy
 
 Accuracy is a common evaluation metric for classification problems. It’s the number of correct predictions made as a ratio of all predictions made.
+
+
 $$
 Accuracy = M_{correct} / M_{total}
 $$
+
+
 In binary classification, the accuracy rate can be obtained by the following formula:
+
+
 $$
 Accuracy = (TP+TN) / (TP+TN+FP+FN)
 $$
+
+
 Accuracy is one of the simplest and most intuitive metrics to evaluate in classification problems, but there are some limitations to accuracy. For example, in binary classification, when the percentage of negative samples is 99%, if the model predicts all samples as negative samples, it can also obtain 99% accuracy. Although the accuracy seems to be high, the model is actually useless because it cannot find a single positive sample. When the data is abnormally unbalanced, although the Accuracy Score is high, it is meaningless.
 
 #### Precision
 
 Precision is the ratio of correctly predicted positive observations to the total predicted positive observations.
+
+
 $$
 Precision = TP/(TP+FP)
 $$
@@ -137,6 +145,8 @@ $$
 #### Recall (Sensity)
 
 Recall is the ratio of correctly predicted positive observations to the all observations in actual class.
+
+
 $$
 Recall = TP/(TP+FN)
 $$
@@ -144,10 +154,14 @@ $$
 #### F1 Score
 
 F1 Score is the weighted average of precision and recall. In general, precision and recall are mutually exclusive, that is, if the precision is high, the recall will be low; if the recall is high, the precision will be low. Therefore, F1 score was designed to consider both precision and recall.
+
+
 $$
 F1 = 2*(Recall * Precision) / (Recall + Precision)
 $$
 F1 score can be generalized to a weighted average of different weights assigned to precision and recall.
+
+
 $$
 F_a = [(1+a^2)*(Recall*Precision)]/[a^2*Precision+Recall]
 $$
@@ -168,6 +182,8 @@ The magnitude of a indicates the relative importance of recall to precision.
 ROC(Receiver Operation Characteristic Curve)，this curve plotted with the true positive rate as the vertical coordinate and the false positive rate as the horizontal coordinate, which is a composite indicator of the continuous variables of sensitivity and special effects. It is generally believed that the smoother the ROC indicates the lower probability of overfitting of the classification algorithm, and the steeper the ROC is away from the diagonal line and closer to the upper left corner indicates the better classification performance.
 
 In many machine learning models, the output of many models is the prediction probability. When evaluating models using metrics such as precision and recall, it is necessary to set a classification threshold for the prediction probability, such that a prediction probability greater than the threshold is a positive case and the opposite is a negative case. The ROC curve does not need to set such a threshold, and the vertical coordinate of the ROC curve is the true positive rate and the horizontal coordinate is the false positive rate.
+
+
 $$
 [Sensitivity=Recall= Y-axis]True Positive Rate(TPR)= TP /(TP+FN)
 $$
@@ -175,6 +191,8 @@ $$
 $$
 [1-Specificity=X-axis]FalsePositiveRate(FPR)=FP/(FP+TN)
 $$
+
+
 
 When the distribution of positive and negative samples in the test set changes, the ROC curve is able to remain unchanged, ignoring the sample imbalance.
 
@@ -353,7 +371,9 @@ $$
 
 **Reference/参考**: 
 
-[1]: https://cloud.tencent.com/developer/article/1558428
-[2]: https://www.jianshu.com/p/41f434818ffc
-[3]: https://cloud.tencent.com/developer/article/1356921
+https://cloud.tencent.com/developer/article/1558428
+
+https://www.jianshu.com/p/41f434818ffc
+
+https://cloud.tencent.com/developer/article/1356921
 
