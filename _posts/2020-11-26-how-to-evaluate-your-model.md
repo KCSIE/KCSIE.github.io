@@ -211,7 +211,7 @@ $$
 
 MAE (Mean Absolute Error) is the average of the absolute error. It can better reflect the actual situation of the prediction value error.
 $$
-MAE ={\frac1m}*{{\sum_{i=1}}^m|{y_{test}^i}-{{\hat{y}}_{test}^i}|}
+MAE =\frac1m*\sum_{i=1}^m|y_{test}^i-{\hat{y}}_{test}^i|
 $$
 
 
