@@ -195,14 +195,14 @@ The area under the ROC curve is the AUC value, which can only be used for the ev
 
 MSE (Mean Squared Error) is generally used to detect the deviation between the predicted and true values of a model. MSE is the square of the difference between the true and predicted values and then summed and averaged. The squared form is easy to derive, so it is often used as a loss function in linear regression.
 $$
-MSE={\frac1m}*{\sum_{i=1}^m({y_{test}^i}-{{\hat y}_{test}^i})^2}
+MSE={\frac1m}*{\sum_{i=1}^m({y_{test}^i}-{{\hat{y}}_{test}^i})^2}
 $$
 
 #### RMSE
 
 RMSE (Root Mean Squarde Error) is a square root measure of the deviation between the observed and true values based on MSE. It is often used as a measure of the prediction results of machine learning models.
 $$
-RMSE = \sqrt[]{{\frac1m}*{\sum_{i=1}^m({y_{test}^i}-{{\hat y}_{test}^i})^2}} = \sqrt[]{MSE_{test}}
+RMSE = \sqrt[]{{\frac1m}*{\sum_{i=1}^m({y_{test}^i}-{{\hat{y}}_{test}^i})^2}} = \sqrt[]{MSE_{test}}
 $$
 
 ### MAE&MAPE
@@ -211,7 +211,7 @@ $$
 
 MAE (Mean Absolute Error) is the average of the absolute error. It can better reflect the actual situation of the prediction value error.
 $$
-MAE ={\frac1m}*{\sum_{i=1}^m|{y_{test}^i}-{{\hat y}_{test}^i}|}
+MAE ={\frac1m}*{\sum_{i=1}^m|{y_{test}^i}-{{\hat{y}}_{test}^i}|}
 $$
 
 
@@ -219,7 +219,7 @@ $$
 
 MAPE (Mean Absolute Percentage Error) is called Mean Absolute Percentage Error. MAPE of 0% indicates a perfect model, while MAPE greater than 100 % indicates a poor model.
 $$
-MAPE ={\frac{100%}m}*{\sum_{i=1}^m|{{ {{\hat y}_{test}^i}-{y_{test}^i}}\over{y_{test}^i}}| }
+MAPE ={\frac{100%}m}*{\sum_{i=1}^m|{{ {{\hat{y}}_{test}^i}-{y_{test}^i}}\over{y_{test}^i}}| }
 $$
 
 
@@ -323,14 +323,14 @@ ROC曲线下的面积即AUC值，只能用于二分类模型的评价。AUC是�
 
 MSE(Mean Squared Error)叫做均方误差，一般用来检测模型的预测值和真实值之间的偏差。MSE是真实值与预测值的差值的平方然后求和平均。通过平方的形式便于求导，所以常被用作线性回归的损失函数。
 $$
-MSE={\frac1m}*{\sum_{i=1}^m({y_{test}^i}-{{\hat y}_{test}^i})^2}
+MSE={\frac1m}*{\sum_{i=1}^m({y_{test}^i}-{{\hat{y}}_{test}^i})^2}
 $$
 
 #### RMSE
 
 RMSE(Root Mean Squarde Error)叫做均方根误差，是在MSE的基础上做平方根衡量观测值与真实值之间的偏差，常用来作为机器学习模型预测结果衡量的标准。
 $$
-RMSE = \sqrt[]{{\frac1m}*{\sum_{i=1}^m({y_{test}^i}-{{\hat y}_{test}^i})^2}} = \sqrt[]{MSE_{test}}
+RMSE = \sqrt[]{{\frac1m}*{\sum_{i=1}^m({y_{test}^i}-{{\hat{y}}_{test}^i})^2}} = \sqrt[]{MSE_{test}}
 $$
 
 ### MAE&MAPE
@@ -339,7 +339,7 @@ $$
 
 MAE(Mean Absolute Error)叫做平均绝对误差，是绝对误差的平均值。它可以更好地反映预测值误差的实际情况。
 $$
-MAE ={\frac1m}*{\sum_{i=1}^m|{y_{test}^i}-{{\hat y}_{test}^i}|}
+MAE ={\frac1m}*{\sum_{i=1}^m|{y_{test}^i}-{{\hat{y}}_{test}^i}|}
 $$
 
 
@@ -347,7 +347,7 @@ $$
 
 MAPE(Mean Absolute Percentage Error)叫做平均绝对百分比误差。MAPE 为0%表示完美模型，MAPE 大于 100 %则表示劣质模型。
 $$
-MAPE ={\frac{100%}m}*{\sum_{i=1}^m|{{ {{\hat y}_{test}^i}-{y_{test}^i}}\over{y_{test}^i}}| }
+MAPE ={\frac{100%}m}*{\sum_{i=1}^m|{{ {{\hat{y}}_{test}^i}-{y_{test}^i}}\over{y_{test}^i}}| }
 $$
 
 
