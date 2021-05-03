@@ -219,7 +219,7 @@ MSE (Mean Squared Error) is generally used to detect the deviation between the p
 
 
 $$
-MSE={\frac1m}*\sum_{i=1}^m({y_{test}^i}-{{\hat{y}}_{test}^i})^2
+MSE=\frac1m*\sum_{i=1}^m({y_{test}^i}-{{\hat{y}}_{test}^i})^2
 $$
 
 #### RMSE
@@ -249,7 +249,7 @@ MAPE (Mean Absolute Percentage Error) is called Mean Absolute Percentage Error. 
 
 
 $$
-MAPE =\frac{100%}m*\sum_{i=1}^m|\frac{{\hat{y}}_{test}^i-y_{test}^i}{y_{test}^i}|
+MAPE =\frac{100\%}m*\sum_{i=1}^m|\frac{\hat{y}_{test}^i-y_{test}^i}{y_{test}^i}|
 $$
 
 
@@ -379,7 +379,7 @@ MSE(Mean Squared Error)叫做均方误差，一般用来检测模型的预测值
 
 
 $$
-MSE={\frac1m}*\sum_{i=1}^m({y_{test}^i}-{{\hat{y}}_{test}^i})^2
+MSE=\frac1m*\sum_{i=1}^m({y_{test}^i}-{{\hat{y}}_{test}^i})^2
 $$
 
 #### RMSE
@@ -409,7 +409,7 @@ MAPE(Mean Absolute Percentage Error)叫做平均绝对百分比误差。MAPE 为
 
 
 $$
-MAPE =\frac{100%}m*\sum_{i=1}^m|\frac{{\hat{y}}_{test}^i-y_{test}^i}{y_{test}^i}|
+MAPE =\frac{100\%}m*\sum_{i=1}^m|\frac{\hat{y}_{test}^i-y_{test}^i}{y_{test}^i}|
 $$
 
 
