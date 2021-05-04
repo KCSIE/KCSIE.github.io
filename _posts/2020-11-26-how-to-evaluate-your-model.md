@@ -1,6 +1,6 @@
 ---
 title: How to Evaluate your Model
-tags: AI ML DL Notes
+tags: ML Metrics Notes
 ---
 
 # Introduction

@@ -13,7 +13,7 @@ tags: MySQL Pycharm Database Tools
 
 + Enter 
 
-  ```
+  ```sql
   MySQL -u root -p
   ```
 
@@ -25,7 +25,7 @@ tags: MySQL Pycharm Database Tools
 
 + Enter 
 
-  ```
+  ```sql
   CREATE USER 'Bob'@'localhost' IDENTIFIED BY '123456';
   ```
 
@@ -33,7 +33,7 @@ tags: MySQL Pycharm Database Tools
 
 + Next, don't log out from the root account. We need to authorize the new account. Enter 
 
-  ```
+  ```sql
   GRANT ALL ON *.* TO 'Bob'@'localhost';
   ```
 
@@ -41,7 +41,7 @@ tags: MySQL Pycharm Database Tools
 
 + Now you can enter 
 
-  ```
+  ```sql
   exit
   ```
 
@@ -59,7 +59,7 @@ tags: MySQL Pycharm Database Tools
 
 + 输入
 
-  ```
+  ```sql
   MySQL -u root -p
   ```
 
@@ -71,7 +71,7 @@ tags: MySQL Pycharm Database Tools
 
 + 输入
 
-  ```
+  ```sql
   CREATE USER 'Bob'@'localhost' IDENTIFIED BY '123456';
   ```
 
@@ -79,7 +79,7 @@ tags: MySQL Pycharm Database Tools
 
 + 接着，不要退出当前的root账户。我们需要为新创建的账户授权。输入 
 
-  ```
+  ```sql
   GRANT ALL ON *.* TO 'Bob'@'localhost';
   ```
 
@@ -87,7 +87,7 @@ tags: MySQL Pycharm Database Tools
 
 + 现在你可以输入
 
-  ```
+  ```sql
   exit
   ```
 
@@ -113,7 +113,7 @@ Now, we can get back to the MySQL to create a database.
 
 Enter 
 
-```
+```sql
 MySQL -h localhost -u Bob -p
 ```
 
@@ -121,7 +121,7 @@ and the password 123456 to enter this account.
 
 Enter 
 
-```
+```sql
 CREATE DATABASE warehouse;
 ```
 
@@ -147,7 +147,7 @@ If not, don't worry, let's go on.
 
 The problem I met is 
 
-```
+```sql
 The specified database user/password combination is rejected: [42000][1044]
 ```
 
@@ -155,7 +155,7 @@ It's caused by the invalid timezone. So I have to set ‘serverTimezone’ prope
 
 Get back to the MySQL. Enter 
 
-```
+```sql
 show variables like'%time_zone';
 ```
 
@@ -167,7 +167,7 @@ which means you have not set the timezone.
 
 Thus, you need to enter 
 
-```
+```sql
 set global time_zone = '+8:00';
 ```
 
@@ -199,7 +199,7 @@ Likewise, if you see a green tick, then you succeed!
 
 输入
 
-```
+```sql
 MySQL -h localhost -u Bob -p
 ```
 
@@ -207,7 +207,7 @@ MySQL -h localhost -u Bob -p
 
 输入
 
-```
+```sql
 CREATE DATABASE warehouse;
 ```
 
@@ -233,7 +233,7 @@ CREATE DATABASE warehouse;
 
 我遇到了这个问题
 
-```
+```sql
 The specified database user/password combination is rejected: [42000][1044]
 ```
 
@@ -241,7 +241,7 @@ The specified database user/password combination is rejected: [42000][1044]
 
 回到MySQL。输入 
 
-```
+```sql
 show variables like'%time_zone';
 ```
 
@@ -253,7 +253,7 @@ show variables like'%time_zone';
 
 所以，你需要输入
 
-```
+```sql
 set global time_zone = '+8:00';
 ```
 
