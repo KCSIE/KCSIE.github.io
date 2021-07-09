@@ -421,7 +421,7 @@ $$
 
 **Reference/参考**: 
 
-1. https://cloud.tencent.com/developer/article/1558428
-2. https://www.jianshu.com/p/41f434818ffc
-3. https://cloud.tencent.com/developer/article/1356921
+1. [训练集、验证集、测试集](https://cloud.tencent.com/developer/article/1558428)
+2. [如何评估模型好坏](https://www.jianshu.com/p/41f434818ffc)
+3. [一份非常全面的机器学习分类与回归算法的评估指标汇总](https://cloud.tencent.com/developer/article/1356921)
 
