@@ -1,6 +1,6 @@
 ---
 title: How to Evaluate your Model - EN
-tags: ML Metrics Notes
+tags: ML DL Metrics 
 ---
 
 # Introduction

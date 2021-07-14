@@ -1,6 +1,6 @@
 ---
 title: 如何评估你的模型 - ZH
-tags: ML Metrics Notes
+tags: ML DL Metrics
 ---
 
 # 引入
