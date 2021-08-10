@@ -1,5 +1,5 @@
 ---
-title: 通过Chevereto搭建私有图床 - EN
+title: Build a Image Bed with Chevereto - EN
 tags: Image-hosting Linux Docker
 ---
 
