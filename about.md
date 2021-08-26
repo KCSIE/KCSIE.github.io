@@ -29,10 +29,8 @@ key: page-about
 
 
 <div style="align: center">
-<img src="https://z3.ax1x.com/2021/08/26/hnW2TI.png"/>
+<img src="https://z3.ax1x.com/2021/08/26/hnhLWV.png"/>
 </div>
-
-[![hnW2TI.md.png](https://z3.ax1x.com/2021/08/26/hnW2TI.md.png)](https://imgtu.com/i/hnW2TI)
 
 ### Hi There!
 
