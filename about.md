@@ -30,11 +30,13 @@ key: page-about
 
 <div align=center>
 	<img src="https://z3.ax1x.com/2021/08/26/hnhLWV.png" height="300" width="300"/>
+    <p>日拱一卒無有盡 功不唐捐終入海</p>
 </div>
 
-### Hi There!
 
-Hello! I'm KCSIE. Welcome to my blog.
+### Hi There! 你好！
+
+Hello! I'm KCSIE. Welcome to my blog. 我是KCSIE，欢迎来到我的博客。
 
 
 
