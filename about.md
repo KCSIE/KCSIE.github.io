@@ -28,11 +28,17 @@ key: page-about
 
 
 
-😜
+<div style="align: center">
+<img src="https://imgtu.com/i/hnW2TI"/>
+</div>
 
-## Hi There!
+### Hi There!
 
 Hello! I'm KCSIE. Welcome to my blog.
+
+
+
+
 
 
 
