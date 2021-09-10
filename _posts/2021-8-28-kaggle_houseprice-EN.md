@@ -1,5 +1,5 @@
 ---
-title: Kaggle - House Price Prediction - ZH
+title: Kaggle - House Price Prediction - EN
 tags: Kaggle ML Regression
 ---
 
@@ -1441,8 +1441,8 @@ submission.info()
 2. [Random Forest, XGB, Ridge, Lasso : All in one](https://www.kaggle.com/janvichokshi/random-forest-xgb-ridge-lasso-all-in-one)
 3. [kaggle案例-Python实现房价预测-完整分析流程](https://zhuanlan.zhihu.com/p/109924294)
 4. [Kaggle房价预测（一）-探索性数据分析](https://zhuanlan.zhihu.com/p/52426254)
-5. [[scikit-learn 线性回归算法库小结](https://www.cnblogs.com/pinard/p/6026343.html)]()
-6. [[Python机器学习笔记：Grid SearchCV（网格搜索）](https://www.cnblogs.com/wj-1314/p/10422159.html)]()
+5. [scikit-learn 线性回归算法库小结](https://www.cnblogs.com/pinard/p/6026343.html)
+6. [Python机器学习笔记：Grid SearchCV（网格搜索）](https://www.cnblogs.com/wj-1314/p/10422159.html)
 
 
 
