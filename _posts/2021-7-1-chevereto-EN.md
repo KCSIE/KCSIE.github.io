@@ -192,6 +192,8 @@ yum install -y docker-latest
    chmod 777 /chevereto/chevereto_images
    ```
 
+------
+
 **Reference/参考**: 
 
 1. [Install Docker Engine on Ubuntu](https://docs.docker.com/engine/install/ubuntu/)

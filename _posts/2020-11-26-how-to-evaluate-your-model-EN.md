@@ -210,7 +210,7 @@ $$
 MAPE =\frac{100\%}m*\sum_{i=1}^m|\frac{\hat{y}_{test}^i-y_{test}^i}{y_{test}^i}|
 $$
 
-
+------
 
 **Reference/参考**: 
 
